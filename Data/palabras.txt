@@ -1,0 +1,391 @@
+14
+ABECEDARIO
+27
+A,http://videodiccionario.thinkasoft.com/clips/a.mp4
+B,http://videodiccionario.thinkasoft.com/clips/b.mp4
+C,http://videodiccionario.thinkasoft.com/clips/c.mp4
+D,http://videodiccionario.thinkasoft.com/clips/d.mp4
+E,http://videodiccionario.thinkasoft.com/clips/e.mp4
+F,http://videodiccionario.thinkasoft.com/clips/f.mp4
+G,http://videodiccionario.thinkasoft.com/clips/g.mp4
+H,http://videodiccionario.thinkasoft.com/clips/h.mp4
+I,http://videodiccionario.thinkasoft.com/clips/i.mp4
+J,http://videodiccionario.thinkasoft.com/clips/j.mp4
+K,http://videodiccionario.thinkasoft.com/clips/k.mp4
+L,http://videodiccionario.thinkasoft.com/clips/l.mp4
+M,http://videodiccionario.thinkasoft.com/clips/m.mp4
+N,http://videodiccionario.thinkasoft.com/clips/n.mp4
+Ñ,http://videodiccionario.thinkasoft.com/clips/ny.mp4
+O,http://videodiccionario.thinkasoft.com/clips/o.mp4
+P,http://videodiccionario.thinkasoft.com/clips/p.mp4
+Q,http://videodiccionario.thinkasoft.com/clips/q.mp4
+R,http://videodiccionario.thinkasoft.com/clips/r.mp4
+S,http://videodiccionario.thinkasoft.com/clips/s.mp4
+T,http://videodiccionario.thinkasoft.com/clips/t.mp4
+U,http://videodiccionario.thinkasoft.com/clips/u.mp4
+V,http://videodiccionario.thinkasoft.com/clips/v.mp4
+W,http://videodiccionario.thinkasoft.com/clips/w.mp4
+X,http://videodiccionario.thinkasoft.com/clips/x.mp4
+Y,http://videodiccionario.thinkasoft.com/clips/y.mp4
+Z,http://videodiccionario.thinkasoft.com/clips/z.mp4
+ANATOMIA
+25
+Antebrazo,http://videodiccionario.thinkasoft.com/clips/antebrazo.mp4
+Anular,http://videodiccionario.thinkasoft.com/clips/anular.mp4
+Apendice,http://videodiccionario.thinkasoft.com/clips/apendice.mp4
+Arterias,http://videodiccionario.thinkasoft.com/clips/arterias.mp4
+Articulaciones,http://videodiccionario.thinkasoft.com/clips/articulaciones.mp4
+Barbilla,http://videodiccionario.thinkasoft.com/clips/barbilla.mp4
+Barriga,http://videodiccionario.thinkasoft.com/clips/barriga.mp4
+Boca,http://videodiccionario.thinkasoft.com/clips/boca.mp4
+Brazo,http://videodiccionario.thinkasoft.com/clips/brazo.mp4
+Cabello,http://videodiccionario.thinkasoft.com/clips/cabello.mp4
+Cabeza,http://videodiccionario.thinkasoft.com/clips/cabeza.mp4
+Cara,http://videodiccionario.thinkasoft.com/clips/cara.mp4
+Cejas,http://videodiccionario.thinkasoft.com/clips/cejas.mp4
+Cerebro,http://videodiccionario.thinkasoft.com/clips/cerebro.mp4
+Cintura,http://videodiccionario.thinkasoft.com/clips/cintura.mp4
+Codo,http://videodiccionario.thinkasoft.com/clips/codo.mp4
+Cuello,http://videodiccionario.thinkasoft.com/clips/cuello.mp4
+Frente,http://videodiccionario.thinkasoft.com/clips/frente.mp4
+Garganta,http://videodiccionario.thinkasoft.com/clips/garganta.mp4
+Labios,http://videodiccionario.thinkasoft.com/clips/labios.mp4
+Nariz,http://videodiccionario.thinkasoft.com/clips/nariz.mp4
+Ojos,http://videodiccionario.thinkasoft.com/clips/ojos.mp4
+Orejas,http://videodiccionario.thinkasoft.com/clips/orejas.mp4
+Pelo,http://videodiccionario.thinkasoft.com/clips/pelo.mp4
+Sien,http://videodiccionario.thinkasoft.com/clips/sien.mp4
+COLOQUIAL
+23
+A juro,http://videodiccionario.thinkasoft.com/clips/a_juro.mp4
+Año de la pera,http://videodiccionario.thinkasoft.com/clips/anyo_de_la_pera.mp4
+Arroz con mango,http://videodiccionario.thinkasoft.com/clips/arroz_con_mango.mp4
+Bajale dos,http://videodiccionario.thinkasoft.com/clips/bajale_dos.mp4
+Bajarse de la mula,http://videodiccionario.thinkasoft.com/clips/bajarse_de_la_mula.mp4
+Bala fria,http://videodiccionario.thinkasoft.com/clips/bala_fria.mp4
+Bate quebrao,http://videodiccionario.thinkasoft.com/clips/bate_quebrao.mp4
+Bien resuelto,http://videodiccionario.thinkasoft.com/clips/bien_resuelto.mp4
+Burda,http://videodiccionario.thinkasoft.com/clips/burda.mp4
+Cable pelado,http://videodiccionario.thinkasoft.com/clips/cable_pelado.mp4
+Caido de la mata,http://videodiccionario.thinkasoft.com/clips/caido_de_la_mata.mp4
+Caimanera,http://videodiccionario.thinkasoft.com/clips/caimanera.mp4
+Caleta,http://videodiccionario.thinkasoft.com/clips/caleta.mp4
+Chimbo,http://videodiccionario.thinkasoft.com/clips/chimbo.mp4
+Chin chin,http://videodiccionario.thinkasoft.com/clips/chin_chin.mp4
+Echarle los perros,http://videodiccionario.thinkasoft.com/clips/echarle_los_perros.mp4
+Fino,http://videodiccionario.thinkasoft.com/clips/fino.mp4
+Guachiman,http://videodiccionario.thinkasoft.com/clips/guachiman.mp4
+Palo de agua,http://videodiccionario.thinkasoft.com/clips/palo_de_agua.mp4
+Pana,http://videodiccionario.thinkasoft.com/clips/pana.mp4
+Patatus,http://videodiccionario.thinkasoft.com/clips/patatus.mp4
+Peroles,http://videodiccionario.thinkasoft.com/clips/peroles.mp4
+Sifrino,http://videodiccionario.thinkasoft.com/clips/sifrino.mp4
+DANZA
+22
+Bailar,http://videodiccionario.thinkasoft.com/clips/bailar.mp4
+Bailarin,http://videodiccionario.thinkasoft.com/clips/bailarin.mp4
+Ballet,http://videodiccionario.thinkasoft.com/clips/ballet.mp4
+Danza arabe,http://videodiccionario.thinkasoft.com/clips/danza_arabe.mp4
+Danza,http://videodiccionario.thinkasoft.com/clips/danza.mp4
+Flamenco,http://videodiccionario.thinkasoft.com/clips/flamenco.mp4
+Girar,http://videodiccionario.thinkasoft.com/clips/girar.mp4
+Joropo,http://videodiccionario.thinkasoft.com/clips/joropo.mp4
+Mambo,http://videodiccionario.thinkasoft.com/clips/mambo.mp4
+Merengue,http://videodiccionario.thinkasoft.com/clips/merengue.mp4
+Musica,http://videodiccionario.thinkasoft.com/clips/musica.mp4
+Pareja de baile,http://videodiccionario.thinkasoft.com/clips/pareja_de_baile.mp4
+Pasos,http://videodiccionario.thinkasoft.com/clips/pasos.mp4
+Pista de baile,http://videodiccionario.thinkasoft.com/clips/pista_de_baile.mp4
+Ritmo,http://videodiccionario.thinkasoft.com/clips/ritmo.mp4
+Rock and roll,http://videodiccionario.thinkasoft.com/clips/rock_and_roll.mp4
+Rumba española,http://videodiccionario.thinkasoft.com/clips/rumba_espanyola.mp4
+Salsa,http://videodiccionario.thinkasoft.com/clips/salsa.mp4
+Samba,http://videodiccionario.thinkasoft.com/clips/samba.mp4
+Tango,http://videodiccionario.thinkasoft.com/clips/tango.mp4
+Vuelta,http://videodiccionario.thinkasoft.com/clips/vuelta.mp4
+Zapatillas,http://videodiccionario.thinkasoft.com/clips/zapatillas.mp4
+DISCAPACIDAD
+39
+Accesibilidad,http://videodiccionario.thinkasoft.com/clips/accesibilidad.mp4
+Adquirido,http://videodiccionario.thinkasoft.com/clips/adquirido.mp4
+Amputación,http://videodiccionario.thinkasoft.com/clips/amputacion.mp4
+Animal de asistencia,http://videodiccionario.thinkasoft.com/clips/animal_de_asistencia.mp4
+Ayudas opticas,http://videodiccionario.thinkasoft.com/clips/ayudas_opticas.mp4
+Barreras,http://videodiccionario.thinkasoft.com/clips/barreras.mp4
+Baston de apoyo,http://videodiccionario.thinkasoft.com/clips/baston_de_apoyo.mp4
+Baston de rastreo,http://videodiccionario.thinkasoft.com/clips/baston_de_rastreo.mp4
+Braile,http://videodiccionario.thinkasoft.com/clips/braile.mp4
+Calificación,http://videodiccionario.thinkasoft.com/clips/calificacion.mp4
+Ciego,http://videodiccionario.thinkasoft.com/clips/ciego.mp4
+Conapdis,http://videodiccionario.thinkasoft.com/clips/conapdis.mp4
+Congénito,http://videodiccionario.thinkasoft.com/clips/congenito.mp4
+Cuadripléjico,http://videodiccionario.thinkasoft.com/clips/cuadriplejico.mp4
+Discapacidad combinada,http://videodiccionario.thinkasoft.com/clips/discapacidad_combinada.mp4
+Discapacidad intelectual,http://videodiccionario.thinkasoft.com/clips/discapacidad_intelectual.mp4
+Discapacidad motora,http://videodiccionario.thinkasoft.com/clips/discapacidad_motora.mp4
+Discapacidad social,http://videodiccionario.thinkasoft.com/clips/discapacidad_social.mp4
+Discapacidad visual,http://videodiccionario.thinkasoft.com/clips/discapacidad_visual.mp4
+Discapacidad auditiva,http://videodiccionario.thinkasoft.com/clips/discapacidad_auditiva.mp4
+Discriminación,http://videodiccionario.thinkasoft.com/clips/discriminacion.mp4
+Implante coclear,http://videodiccionario.thinkasoft.com/clips/implante_coclear.mp4
+Inclusión,http://videodiccionario.thinkasoft.com/clips/inclusion.mp4
+Integración,http://videodiccionario.thinkasoft.com/clips/integracion.mp4
+Interprete,http://videodiccionario.thinkasoft.com/clips/interprete.mp4
+Lengua de señas venezolana,http://videodiccionario.thinkasoft.com/clips/lengua_de_senyas_venezolana.mp4
+Ley para personas con discapacidad,http://videodiccionario.thinkasoft.com/clips/ley_para_personas_con_discapacidad.mp4
+Muletas,http://videodiccionario.thinkasoft.com/clips/muletas.mp4
+Oportunidades,http://videodiccionario.thinkasoft.com/clips/oportunidades.mp4
+Paraplejico,http://videodiccionario.thinkasoft.com/clips/parapeljico.mp4
+Prevención,http://videodiccionario.thinkasoft.com/clips/prevencion.mp4
+Protesis,http://videodiccionario.thinkasoft.com/clips/protesis.mp4
+Rampa de acceso,http://videodiccionario.thinkasoft.com/clips/rampa_de_acceso.mp4
+Rehabilitación,http://videodiccionario.thinkasoft.com/clips/rehabilitacion.mp4
+Seguridad laboral,http://videodiccionario.thinkasoft.com/clips/seguridad_laboral.mp4
+Silla de ruedas,http://videodiccionario.thinkasoft.com/clips/silla_de_ruedas.mp4
+Sordo,http://videodiccionario.thinkasoft.com/clips/sordo.mp4
+Sordociego,http://videodiccionario.thinkasoft.com/clips/sordociego.mp4
+Subtitulos,http://videodiccionario.thinkasoft.com/clips/subtitulos.mp4
+FRASES DE RELACIONES PERSONALES
+12
+Adios,http://videodiccionario.thinkasoft.com/clips/adios.mp4
+Buenas Noches,http://videodiccionario.thinkasoft.com/clips/buenas_noches.mp4
+Buenas Tardes,http://videodiccionario.thinkasoft.com/clips/buenas_tardes.mp4
+Buenos Días,http://videodiccionario.thinkasoft.com/clips/buenos_dias.mp4
+Como te llamas?,http://videodiccionario.thinkasoft.com/clips/como_te_llamas-.mp4
+En que trabajas?,http://videodiccionario.thinkasoft.com/clips/en_que_trabajas-.mp4
+Hola,http://videodiccionario.thinkasoft.com/clips/hola.mp4
+Lo conoces?,http://videodiccionario.thinkasoft.com/clips/lo_conoces-.mp4
+Qué estudias?,http://videodiccionario.thinkasoft.com/clips/que_estudias-.mp4
+Quiero conocerlo,http://videodiccionario.thinkasoft.com/clips/quiero_conocerlo.mp4
+Te amo,http://videodiccionario.thinkasoft.com/clips/te_amo.mp4
+Yo lo conozco,http://videodiccionario.thinkasoft.com/clips/yo_lo_conozco.mp4
+FRASES DE SALUD
+8
+Dónde te duele?,http://videodiccionario.thinkasoft.com/clips/donde_te_duele-.mp4
+Eres alérgico a algo?,http://videodiccionario.thinkasoft.com/clips/eres_alergico_a_algo-.mp4
+Estás herido?,http://videodiccionario.thinkasoft.com/clips/estas_herido-.mp4
+Qué sientes?,http://videodiccionario.thinkasoft.com/clips/que_sientes-.mp4
+Quieres ir al médico?,http://videodiccionario.thinkasoft.com/clips/quieres_ir_al_medico-.mp4
+Quieres que llame a tu doctor?,http://videodiccionario.thinkasoft.com/clips/quieres_que_llame_a_tu_doctor-.mp4
+Te sientes mejor?,http://videodiccionario.thinkasoft.com/clips/te_sientes_mejor-.mp4
+Te vamos a llevar al hospital,http://videodiccionario.thinkasoft.com/clips/te_vamos_a_llevar_al_hospital.mp4
+GEOGRAFÍA DE VENEZUELA
+26
+Amazonas,http://videodiccionario.thinkasoft.com/clips/amazonas.mp4
+Anzoategui,http://videodiccionario.thinkasoft.com/clips/anzoategui.mp4
+Apure,http://videodiccionario.thinkasoft.com/clips/apure.mp4
+Aragua,http://videodiccionario.thinkasoft.com/clips/aragua.mp4
+Barinas,http://videodiccionario.thinkasoft.com/clips/barinas.mp4
+Bolivar,http://videodiccionario.thinkasoft.com/clips/bolivar.mp4
+Carabobo,http://videodiccionario.thinkasoft.com/clips/carabobo.mp4
+Caracas,http://videodiccionario.thinkasoft.com/clips/caracas.mp4
+Cojedes,http://videodiccionario.thinkasoft.com/clips/cojedes.mp4
+Delta amacuro,http://videodiccionario.thinkasoft.com/clips/delta_amacuro.mp4
+Distrito Capital,http://videodiccionario.thinkasoft.com/clips/distrito_capital.mp4
+Falcon,http://videodiccionario.thinkasoft.com/clips/falcon.mp4
+Guarico,http://videodiccionario.thinkasoft.com/clips/guarico.mp4
+Lara,http://videodiccionario.thinkasoft.com/clips/lara.mp4
+Merida,http://videodiccionario.thinkasoft.com/clips/merida.mp4
+Miranda,http://videodiccionario.thinkasoft.com/clips/miranda.mp4
+Monagas,http://videodiccionario.thinkasoft.com/clips/monagas.mp4
+Nueva Esparta,http://videodiccionario.thinkasoft.com/clips/nueva_esparta.mp4
+Portuguesa,http://videodiccionario.thinkasoft.com/clips/portuguesa.mp4
+Sucre,http://videodiccionario.thinkasoft.com/clips/sucre.mp4
+Tachira,http://videodiccionario.thinkasoft.com/clips/tachira.mp4
+Trujillo,http://videodiccionario.thinkasoft.com/clips/trujillo.mp4
+Vargas,http://videodiccionario.thinkasoft.com/clips/vargas.mp4
+Venezuela,http://videodiccionario.thinkasoft.com/clips/venezuela.mp4
+Yaracuy,http://videodiccionario.thinkasoft.com/clips/yaracuy.mp4
+Zulia,http://videodiccionario.thinkasoft.com/clips/zulia.mp4
+MUNDO ACUÁTICO
+35
+Aletas,http://videodiccionario.thinkasoft.com/clips/aletas.mp4
+Algas,http://videodiccionario.thinkasoft.com/clips/algas.mp4
+Arena,http://videodiccionario.thinkasoft.com/clips/arena.mp4
+Ballena,http://videodiccionario.thinkasoft.com/clips/ballena.mp4
+Bucear con tanque,http://videodiccionario.thinkasoft.com/clips/bucear_con_tanque.mp4
+Bucear con apnea,http://videodiccionario.thinkasoft.com/clips/bucear_con_apnea.mp4
+Bucear,http://videodiccionario.thinkasoft.com/clips/bucear.mp4
+Caballito de mar,http://videodiccionario.thinkasoft.com/clips/caballito_de_mar.mp4
+Cangrejo,http://videodiccionario.thinkasoft.com/clips/cangrejo.mp4
+Caracoles,http://videodiccionario.thinkasoft.com/clips/caracoles.mp4
+Clavado,http://videodiccionario.thinkasoft.com/clips/clavado.mp4
+Corales,http://videodiccionario.thinkasoft.com/clips/corales.mp4
+Delfin,http://videodiccionario.thinkasoft.com/clips/delfin.mp4
+Deporte acuático,http://videodiccionario.thinkasoft.com/clips/deporte_acuatico.mp4
+Estrella de mar,http://videodiccionario.thinkasoft.com/clips/estrella_de_mar.mp4
+Flotar,http://videodiccionario.thinkasoft.com/clips/flotar.mp4
+Malecón,http://videodiccionario.thinkasoft.com/clips/malecon.mp4
+Mar de leva,http://videodiccionario.thinkasoft.com/clips/mar_de_leva.mp4
+Mar,http://videodiccionario.thinkasoft.com/clips/mar.mp4
+Máscara,http://videodiccionario.thinkasoft.com/clips/mascara.mp4
+Nadador,http://videodiccionario.thinkasoft.com/clips/nadador.mp4
+Nadar,http://videodiccionario.thinkasoft.com/clips/nadar.mp4
+Natación,http://videodiccionario.thinkasoft.com/clips/natacion.mp4
+Oceano,http://videodiccionario.thinkasoft.com/clips/oceano.mp4
+Ola,http://videodiccionario.thinkasoft.com/clips/ola.mp4
+Ostra,http://videodiccionario.thinkasoft.com/clips/ostra.mp4
+Piscina,http://videodiccionario.thinkasoft.com/clips/piscina.mp4
+Profundidad,http://videodiccionario.thinkasoft.com/clips/profundidad.mp4
+Redes,http://videodiccionario.thinkasoft.com/clips/redes.mp4
+Respirar,http://videodiccionario.thinkasoft.com/clips/respirar.mp4
+Salvavidas,http://videodiccionario.thinkasoft.com/clips/salvavidas.mp4
+Snorkeling,http://videodiccionario.thinkasoft.com/clips/snorkeling.mp4
+Surfear,http://videodiccionario.thinkasoft.com/clips/surfear.mp4
+Tiburón,http://videodiccionario.thinkasoft.com/clips/tiburon.mp4
+Tsunami,http://videodiccionario.thinkasoft.com/clips/tsunami.mp4
+MUNDO INFANTIL
+44
+Aventura,http://videodiccionario.thinkasoft.com/clips/aventura.mp4
+Bicicleta,http://videodiccionario.thinkasoft.com/clips/bicicleta.mp4
+Caramelos,http://videodiccionario.thinkasoft.com/clips/caramelos.mp4
+Castigo,http://videodiccionario.thinkasoft.com/clips/castigo.mp4
+Chucheria,http://videodiccionario.thinkasoft.com/clips/chucheria.mp4
+Colchón inflable,http://videodiccionario.thinkasoft.com/clips/colchon_inflable.mp4
+Comiquitas,http://videodiccionario.thinkasoft.com/clips/comiquitas.mp4
+Correr,http://videodiccionario.thinkasoft.com/clips/correr.mp4
+Cuento,http://videodiccionario.thinkasoft.com/clips/cuento.mp4
+Cumpleaños,http://videodiccionario.thinkasoft.com/clips/cumpleanyos.mp4
+Diversión,http://videodiccionario.thinkasoft.com/clips/diversion.mp4
+Dulces,http://videodiccionario.thinkasoft.com/clips/dulces.mp4
+Escondite,http://videodiccionario.thinkasoft.com/clips/escondite.mp4
+Escuela,http://videodiccionario.thinkasoft.com/clips/escuela.mp4
+Fantasia,http://videodiccionario.thinkasoft.com/clips/fantasia.mp4
+Heladero,http://videodiccionario.thinkasoft.com/clips/heladero.mp4
+Helado,http://videodiccionario.thinkasoft.com/clips/helado.mp4
+Imaginación,http://videodiccionario.thinkasoft.com/clips/imaginacion.mp4
+Juego,http://videodiccionario.thinkasoft.com/clips/juego.mp4
+Madre,http://videodiccionario.thinkasoft.com/clips/madre.mp4
+Maestra,http://videodiccionario.thinkasoft.com/clips/maestra.mp4
+Mascota,http://videodiccionario.thinkasoft.com/clips/mascota.mp4
+Merienda,http://videodiccionario.thinkasoft.com/clips/merienda.mp4
+Muñeca,http://videodiccionario.thinkasoft.com/clips/munyeca.mp4
+Niña,http://videodiccionario.thinkasoft.com/clips/ninya.mp4
+Niño,http://videodiccionario.thinkasoft.com/clips/ninyo.mp4
+Padre,http://videodiccionario.thinkasoft.com/clips/padre.mp4
+Papagayo,http://videodiccionario.thinkasoft.com/clips/papagayo.mp4
+Parque de diversiones,http://videodiccionario.thinkasoft.com/clips/parque_de_diversiones.mp4
+Patines,http://videodiccionario.thinkasoft.com/clips/patines.mp4
+Pediatra,http://videodiccionario.thinkasoft.com/clips/pediatra.mp4
+Pelota,http://videodiccionario.thinkasoft.com/clips/pelota.mp4
+Perinola,http://videodiccionario.thinkasoft.com/clips/perinola.mp4
+Piñata,http://videodiccionario.thinkasoft.com/clips/pinyata.mp4
+Recreo,http://videodiccionario.thinkasoft.com/clips/recreo.mp4
+Regalo,http://videodiccionario.thinkasoft.com/clips/regalo.mp4
+Regalo,http://videodiccionario.thinkasoft.com/clips/reganyo.mp4
+Rompecabezas,http://videodiccionario.thinkasoft.com/clips/rompecabezas.mp4
+Saltar,http://videodiccionario.thinkasoft.com/clips/saltar.mp4
+San Nicolas,http://videodiccionario.thinkasoft.com/clips/san_nicolas.mp4
+Superheroe,http://videodiccionario.thinkasoft.com/clips/superheroe.mp4
+Tarea,http://videodiccionario.thinkasoft.com/clips/tarea.mp4
+Vacuna,http://videodiccionario.thinkasoft.com/clips/vacuna.mp4
+Videojuego,http://videodiccionario.thinkasoft.com/clips/videojuego.mp4
+PREGUNTAS
+5
+Cómo?,http://videodiccionario.thinkasoft.com/clips/como-.mp4
+Cuándo?,http://videodiccionario.thinkasoft.com/clips/cuando-.mp4
+Dónde?,http://videodiccionario.thinkasoft.com/clips/donde-.mp4
+Qué?,http://videodiccionario.thinkasoft.com/clips/que-.mp4
+Quién?,http://videodiccionario.thinkasoft.com/clips/quien-.mp4
+RELACIONES PERSONALES
+22
+Abuelo,http://videodiccionario.thinkasoft.com/clips/abuelo.mp4
+Amigo,http://videodiccionario.thinkasoft.com/clips/amigo.mp4
+Colega,http://videodiccionario.thinkasoft.com/clips/colega.mp4
+Conocido,http://videodiccionario.thinkasoft.com/clips/conocido.mp4
+Cuñado,http://videodiccionario.thinkasoft.com/clips/cunyado.mp4
+Ex,http://videodiccionario.thinkasoft.com/clips/ex.mp4
+Gemelo,http://videodiccionario.thinkasoft.com/clips/gemelo.mp4
+Hermano,http://videodiccionario.thinkasoft.com/clips/hermano.mp4
+Hijo,http://videodiccionario.thinkasoft.com/clips/hijo.mp4
+Jefe,http://videodiccionario.thinkasoft.com/clips/jefe.mp4
+Madre,http://videodiccionario.thinkasoft.com/clips/madre.mp4
+Nieta,http://videodiccionario.thinkasoft.com/clips/nieta.mp4
+Nieto,http://videodiccionario.thinkasoft.com/clips/nieto.mp4
+Novio,http://videodiccionario.thinkasoft.com/clips/novio.mp4
+Padre,http://videodiccionario.thinkasoft.com/clips/padre.mp4
+Padres,http://videodiccionario.thinkasoft.com/clips/padres.mp4
+Pana,http://videodiccionario.thinkasoft.com/clips/pana.mp4
+Primo,http://videodiccionario.thinkasoft.com/clips/primo.mp4
+Prometido,http://videodiccionario.thinkasoft.com/clips/prometido.mp4
+Sobrino,http://videodiccionario.thinkasoft.com/clips/sobrino.mp4
+Suegro,http://videodiccionario.thinkasoft.com/clips/suegro.mp4
+Tio,http://videodiccionario.thinkasoft.com/clips/tio.mp4
+SALUD
+29
+Centro medico,http://videodiccionario.thinkasoft.com/clips/centro_medico.mp4
+Contagiar,http://videodiccionario.thinkasoft.com/clips/contagiar.mp4
+Cortado,http://videodiccionario.thinkasoft.com/clips/cortado.mp4
+Dentista,http://videodiccionario.thinkasoft.com/clips/dentista.mp4
+Diabetico,http://videodiccionario.thinkasoft.com/clips/diabetico.mp4
+Doctor,http://videodiccionario.thinkasoft.com/clips/doctor.mp4
+Dolor de cabeza,http://videodiccionario.thinkasoft.com/clips/dolor_de_cabeza.mp4
+Dolor de estomago,http://videodiccionario.thinkasoft.com/clips/dolor_de_estomago.mp4
+Dolor de garganta,http://videodiccionario.thinkasoft.com/clips/dolor_de_garganta.mp4
+Dolor de muela,http://videodiccionario.thinkasoft.com/clips/dolor_de_muela.mp4
+Gripe,http://videodiccionario.thinkasoft.com/clips/gripe.mp4
+Hematoma,http://videodiccionario.thinkasoft.com/clips/hematoma.mp4
+Herida,http://videodiccionario.thinkasoft.com/clips/herida.mp4
+Hospital,http://videodiccionario.thinkasoft.com/clips/hospital.mp4
+Indigestión,http://videodiccionario.thinkasoft.com/clips/indigestion.mp4
+Infección,http://videodiccionario.thinkasoft.com/clips/infeccion.mp4
+Inyección,http://videodiccionario.thinkasoft.com/clips/inyeccion.mp4
+Irritación,http://videodiccionario.thinkasoft.com/clips/irritacion.mp4
+Jarabe,http://videodiccionario.thinkasoft.com/clips/jarabe.mp4
+Medicina,http://videodiccionario.thinkasoft.com/clips/medicina.mp4
+Mejorar,http://videodiccionario.thinkasoft.com/clips/mejorar.mp4
+Operación,http://videodiccionario.thinkasoft.com/clips/operacion.mp4
+Proyecto movie geografia,http://videodiccionario.thinkasoft.com/clips/proyecto_movie_geografia.mp4
+Resfriado,http://videodiccionario.thinkasoft.com/clips/resfriado.mp4
+Tos,http://videodiccionario.thinkasoft.com/clips/tos.mp4
+Tranquilizante,http://videodiccionario.thinkasoft.com/clips/tranquilizante.mp4
+Tratamiento,http://videodiccionario.thinkasoft.com/clips/tratamiento.mp4
+Virus,http://videodiccionario.thinkasoft.com/clips/virus.mp4
+Vomitar,http://videodiccionario.thinkasoft.com/clips/vomitar.mp4
+VERBO
+45
+Amar,http://videodiccionario.thinkasoft.com/clips/amar.mp4
+Ayudar,http://videodiccionario.thinkasoft.com/clips/ayudar.mp4
+Beber,http://videodiccionario.thinkasoft.com/clips/beber.mp4
+Cerrar,http://videodiccionario.thinkasoft.com/clips/cerrar.mp4
+Comer,http://videodiccionario.thinkasoft.com/clips/comer.mp4
+Comprar,http://videodiccionario.thinkasoft.com/clips/comprar.mp4
+Comunicar,http://videodiccionario.thinkasoft.com/clips/comunicar.mp4
+Correr,http://videodiccionario.thinkasoft.com/clips/correr.mp4
+Cortar,http://videodiccionario.thinkasoft.com/clips/cortar.mp4
+Dar,http://videodiccionario.thinkasoft.com/clips/dar.mp4
+Dibujar,http://videodiccionario.thinkasoft.com/clips/dibujar.mp4
+Dormir,http://videodiccionario.thinkasoft.com/clips/dormir.mp4
+Enviar,http://videodiccionario.thinkasoft.com/clips/enviar.mp4
+Escoger,http://videodiccionario.thinkasoft.com/clips/escoger.mp4
+Escribir,http://videodiccionario.thinkasoft.com/clips/escribir.mp4
+Fastidiar,http://videodiccionario.thinkasoft.com/clips/fastidiar.mp4
+Gastar,http://videodiccionario.thinkasoft.com/clips/gastar.mp4
+Hablar,http://videodiccionario.thinkasoft.com/clips/hablar.mp4
+Ir,http://videodiccionario.thinkasoft.com/clips/ir.mp4
+Jurar,http://videodiccionario.thinkasoft.com/clips/jurar.mp4
+Llorar,http://videodiccionario.thinkasoft.com/clips/llorar.mp4
+Mandar,http://videodiccionario.thinkasoft.com/clips/madar.mp4
+Manejar,http://videodiccionario.thinkasoft.com/clips/manejar.mp4
+Mentir,http://videodiccionario.thinkasoft.com/clips/mentir.mp4
+Nadar,http://videodiccionario.thinkasoft.com/clips/nadar.mp4
+Oir,http://videodiccionario.thinkasoft.com/clips/oir.mp4
+Olvidar,http://videodiccionario.thinkasoft.com/clips/olvidar.mp4
+Pedir,http://videodiccionario.thinkasoft.com/clips/pedir.mp4
+Pensar,http://videodiccionario.thinkasoft.com/clips/tio.mp4
+Perdonar,http://videodiccionario.thinkasoft.com/clips/perdonar.mp4
+Permitir,http://videodiccionario.thinkasoft.com/clips/permitir.mp4
+Querer,http://videodiccionario.thinkasoft.com/clips/querer.mp4
+Recibir,http://videodiccionario.thinkasoft.com/clips/recibir.mp4
+Recordar,http://videodiccionario.thinkasoft.com/clips/recordar.mp4
+Regalar,http://videodiccionario.thinkasoft.com/clips/regalar.mp4
+Reir,http://videodiccionario.thinkasoft.com/clips/reir.mp4
+Respetar,http://videodiccionario.thinkasoft.com/clips/respetar.mp4
+Saber,http://videodiccionario.thinkasoft.com/clips/saber.mp4
+Sentir,http://videodiccionario.thinkasoft.com/clips/sentir.mp4
+Soñar,http://videodiccionario.thinkasoft.com/clips/sonyar.mp4
+Tipear,http://videodiccionario.thinkasoft.com/clips/tipear.mp4
+Tocar,http://videodiccionario.thinkasoft.com/clips/tocar.mp4
+Trabajar,http://videodiccionario.thinkasoft.com/clips/trabajar.mp4
+Vender,http://videodiccionario.thinkasoft.com/clips/vender.mp4
+Venir,http://videodiccionario.thinkasoft.com/clips/venir.mp4
