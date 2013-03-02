@@ -1,10 +1,10 @@
 14
 ABECEDARIO
 27
-A,http://videodiccionario.thinkasoft.com/clips/a.mp4
-B,http://videodiccionario.thinkasoft.com/clips/b.mp4
-C,http://videodiccionario.thinkasoft.com/clips/c.mp4
-D,http://videodiccionario.thinkasoft.com/clips/d.mp4
+A,rtsp://v6.cache4.c.youtube.com/CjYLENy73wIaLQmjDVnBmtn8vxMYDSANFEIJbXYtZ29vZ2xlSARSBXdhdGNoYKOZutu0_OePUQw=/0/0/0/video.3gp
+B,rtsp://v6.cache7.c.youtube.com/CjYLENy73wIaLQmRFVTYkq2wYhMYDSANFEIJbXYtZ29vZ2xlSARSBXdhdGNoYKOZutu0_OePUQw=/0/0/0/video.3gp
+C,http://vimeo.com/m/9000390
+D,http://m.youtube.com/watch?hl=gl&gl=US&client=mv-google&v=YrCtkthUFZE#watch_actions
 E,http://videodiccionario.thinkasoft.com/clips/e.mp4
 F,http://videodiccionario.thinkasoft.com/clips/f.mp4
 G,http://videodiccionario.thinkasoft.com/clips/g.mp4

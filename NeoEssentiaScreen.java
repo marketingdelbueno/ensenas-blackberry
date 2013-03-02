@@ -307,7 +307,7 @@ import net.rim.device.api.ui.component.LabelField;
         }
         catch(IOException ioe)
         {
-        System.out.println("Error leyendo los datos");
+            System.out.println("Error leyendo los datos");
                     
         } 
         return palabras;
@@ -359,12 +359,28 @@ import net.rim.device.api.ui.component.LabelField;
             if(remoteName.equals("")){
                 Dialog.alert("El video no está en la base de datos");  
             }
-            else{    //si todo bien la palabra existe y eso
+            /*else if(remoteName.charAt(0) == 'h' ){    //si todo bien la palabra existe y eso
                 descargar_video descargador;//se declara el hilo descargador mas aun no se lanza
                 localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4";
+                FileConnection file;
+                 try {
+                    file = (FileConnection) Connector.open(localName);//se establece una conexion con el archivo a abrir
+                    if(  file.exists() ){
+                        file.setWritable(true);
+                        file.delete();
+                        //se hace escribible y leible para luego ser borrado
+                    }
+                } catch (IOException e) { } catch (Exception e) {}
+                
                 descargador = new descargar_video(remoteName,localName,buscar);//se lanza el hilo
                 // y acontinuacion se llama a la clase VerVideo donde se hace todo lo necesario para ver el video una vez descargado
                 VerVideo infoScreen = new VerVideo( pala_correcta , localName ,_app,palabras_hash,palabras_hash_video,listapalabra,descargador );
+                BuscarCampo.setText("");//se limpia el campo de texto
+                _app.pushScreen(infoScreen);//y se muestra la pantalla en el dispositivo de la clase VerVideo
+            }*/
+            else{    //prueba
+                                
+                VerVideo infoScreen = new VerVideo( pala_correcta , remoteName ,_app,palabras_hash,palabras_hash_video,listapalabra,null );
                 BuscarCampo.setText("");//se limpia el campo de texto
                 _app.pushScreen(infoScreen);//y se muestra la pantalla en el dispositivo de la clase VerVideo
             }

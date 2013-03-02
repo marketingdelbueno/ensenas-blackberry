@@ -92,8 +92,10 @@ import javax.microedition.io.HttpConnection;
                 fondo.add(espaciador1);
             }
             add(fondo);
-            PleaseWaitPopupScreen.showScreenAndWait(d,palabra,this);
-           
+            if(d!=null)
+                PleaseWaitPopupScreen.showScreenAndWait(d,palabra,this);
+            else
+                ver_streaming();
          }
          
          public boolean cargado(){
@@ -108,7 +110,7 @@ import javax.microedition.io.HttpConnection;
                 if(ya_cargo){
                     vi = new VideoPlay(vid);
                     player = vi.video();
-                    ya_cargo=false;
+                    //ya_cargo=false;
                 }
                
                 try{
@@ -116,9 +118,17 @@ import javax.microedition.io.HttpConnection;
                 }
                 catch(MediaException me)
                 {
-                    Dialog.alert(me.toString());
+                    Dialog.alert("Existen Problemas con el archivo ");
+               
+                    if( ya_cargo ){ 
+                        fondo.replace(mostrar_video,problema);
+                        fondo.invalidate();
+                        descargador.borrar_file();
+                        ya_cargo = false;
+                    }
                 }
-                 _app.pushScreen(vi);
+                if ( ya_cargo )
+                    _app.pushScreen(vi);
                
                 UiApplication.getUiApplication().invokeLater(new Runnable() {
                     public void run() {
@@ -139,14 +149,20 @@ import javax.microedition.io.HttpConnection;
                 }
              }
             }
-              else{
-                  if( ya_cargo ){ 
+            else{
+                if( ya_cargo ){ 
                     fondo.replace(mostrar_video,problema);
                     fondo.invalidate();
                     ya_cargo = false;
-                    }
-                  Dialog.alert("Para continuar necesita insertar una tarjeta MicroSD");
-                  }
+                }
+                Dialog.alert("Para continuar necesita insertar una tarjeta MicroSD");
+            }
+        }
+        
+        public void ver_streaming(){
+
+            vi = new VideoPlay(vid);
+            vi.svideo();
         }
         
         public void cargarbotones()

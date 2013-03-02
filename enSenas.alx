@@ -13,9 +13,9 @@
 			Thinkasoft
 		</vendor>
 		<copyright >
-			Copyright (c) 2011 Thinkasoft
+			Copyright (c) 2013 Thinkasoft
 		</copyright>
-		<fileset Java="1.34">
+		<fileset Java="1.54">
 			<directory >
 				
 			</directory>

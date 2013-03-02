@@ -87,7 +87,7 @@ class descargar_video implements Runnable {
                     file.setWritable(true);//se hace escribible
                     OutputStream out = file.openOutputStream();//se establece a la variable "out" como la que va a imprimir en "file"
                     int length = -1;
-                    byte[] readBlock = new byte[256];//se lee o se descarga de 256 en 256 bytes por ves
+                    byte[] readBlock = new byte[1024*64];//se lee o se descarga de 256 en 256 bytes por ves
                     int fileSize = 0;
                     while ((length = in.read(readBlock)) != -1) {//mientras no se haya leido todo
                         out.write(readBlock, 0, length);
@@ -103,7 +103,7 @@ class descargar_video implements Runnable {
                     out.close();
                     file.close();                    
                     se_descargo=true;                        
-                }   
+                }
                           
            //la proxima linea se usa para contar la cantidad de veces que este archivo que se acaba de descargar es descargado,
            //esto con fines de lograr hacer el modulo de "mas vistos" 
@@ -116,7 +116,7 @@ class descargar_video implements Runnable {
              //se hace la lectura de los datos de control que tiene la cantidad de veces que se ha descargado una palabra
               InputStream in = conn.openInputStream();                    
               int length = -1;
-              byte[] readBlock = new byte[256];
+              byte[] readBlock = new byte[1024*64];
               int fileSize = 0;
               while ((length = in.read(readBlock)) != -1)
               in.close();

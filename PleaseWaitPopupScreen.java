@@ -70,7 +70,7 @@ public class PleaseWaitPopupScreen extends PopupScreen {//esta clase extiende po
                                 UiApplication.getUiApplication().popScreen(thisScreen);
                                 video.ver();
                             }
-                        }},2000,false );
+                        }},1000,false );
                     }
                 else{//ahora si el video existe o no hay la microsd, quita el gif y se llama a video.ver que como dije antes 
                      //o reproduce el video o dice que hay algun problema en este caso el unico problema posible es que no haya microsd incertada
@@ -78,7 +78,7 @@ public class PleaseWaitPopupScreen extends PopupScreen {//esta clase extiende po
                     public void run() {
                         UiApplication.getUiApplication().popScreen(thisScreen);
                         video.ver();
-                      }},2000,false );
+                      }},1000,false );
                     }
             }
         };
