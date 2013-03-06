@@ -165,6 +165,13 @@ import javax.microedition.io.HttpConnection;
             vi.svideo();
         }
         
+         public void ver_streaming_repetido(){
+
+            //vi = new VideoPlay(vid);
+            vi.svideo();
+        }
+        
+        
         public void cargarbotones()
         {
             imagen = u.titulo();
@@ -229,7 +236,7 @@ import javax.microedition.io.HttpConnection;
             else if( key == Characters.ENTER ){
                 //Se ejecuta la accion del boton que este seleccionado
                 if( play.Seleccionado() || error.Seleccionado()) 
-                    ver();
+                    ver_streaming_repetido();//ver();
                 else if ( twitter.Seleccionado() )  
                     comentar_twitter();
                 else if (descargar.Seleccionado() )
@@ -246,7 +253,7 @@ import javax.microedition.io.HttpConnection;
        switch(action)
         {
             case ACTION_INVOKE: //Trackball click.
-                if( play.Seleccionado() || error.Seleccionado()) ver();break;
+                if( play.Seleccionado() || error.Seleccionado()) ver_streaming_repetido();break;
             default:    
                 return  super.invokeAction(action);
         };   
@@ -275,7 +282,7 @@ import javax.microedition.io.HttpConnection;
                 Browser.getDefaultSession().displayPage( (palabras_hash_video.get(pala_sin) ).toString() );
             }
         else if( play == field || error ==field )
-                ver();
+                ver_streaming_repetido();
     }
     //Elimina el menu de guardado al salir del mainScreen
     public boolean onSavePrompt(){
