@@ -92,10 +92,14 @@ import javax.microedition.io.HttpConnection;
                 fondo.add(espaciador1);
             }
             add(fondo);
-            if(d!=null)
-                PleaseWaitPopupScreen.showScreenAndWait(d,palabra,this);
+            if(d!=null){
+                PleaseWaitPopupScreen.showScreenAndWait(/*d,*/palabra/*,this*/);
+            }
             else
+            {
+                PleaseWaitPopupScreen.showScreenAndWait(/*d,*/palabra/*,this*/);
                 ver_streaming();
+            }
          }
          
          public boolean cargado(){

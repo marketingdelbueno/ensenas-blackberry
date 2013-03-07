@@ -379,7 +379,8 @@ import net.rim.device.api.ui.component.LabelField;
                 _app.pushScreen(infoScreen);//y se muestra la pantalla en el dispositivo de la clase VerVideo
             }*/
             else{    //prueba
-                                
+                
+                
                 VerVideo infoScreen = new VerVideo( pala_correcta , remoteName ,_app,palabras_hash,palabras_hash_video,listapalabra,null );
                 BuscarCampo.setText("");//se limpia el campo de texto
                 _app.pushScreen(infoScreen);//y se muestra la pantalla en el dispositivo de la clase VerVideo
