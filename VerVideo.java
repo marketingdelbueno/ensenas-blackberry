@@ -55,7 +55,7 @@ import javax.microedition.io.HttpConnection;
         {            
             _app=app;
             u = new Utilidades();
-             tam_icono=0;
+            tam_icono=0;
             tam_imag=0;
             palabras_hash_video = p_h_v;
             palabras_hash = p_h;

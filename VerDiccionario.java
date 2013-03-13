@@ -80,12 +80,8 @@ public class VerDiccionario extends MainScreen{
     
               final String localName;
               final String remoteName =( palabras_hash_video.get(buscar) ).toString();//buscar el link del video que le correspode
-              descargar_video descargador;//variable utilizada para descargar el video
-              localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4"; //lugar donde se almacena el video
-              descargador = new descargar_video(remoteName,localName,buscar);
-                    
-              VerVideo infoScreen = new VerVideo( pal.getpalabra() ,localName,app3 , palabras_hash,palabras_hash_video,listaP,descargador);
-              app3.pushScreen(infoScreen);   
+               VerVideo infoScreen = new VerVideo( buscar , remoteName ,app3,null,null,null,null );
+               app3.pushScreen(infoScreen);   
                 
                 return true; //Se retorna verdad para finalizar la accion
             }
@@ -106,11 +102,7 @@ public class VerDiccionario extends MainScreen{
     
                     final String localName;
                     final String remoteName =( palabras_hash_video.get(buscar) ).toString();//buscar el link del video que le correspode
-                    descargar_video descargador;//variable utilizada para descargar el video
-                    localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4"; //lugar donde se almacena el video
-                    descargador = new descargar_video(remoteName,localName,buscar);
-                    
-                    VerVideo infoScreen = new VerVideo( pal.getpalabra() ,localName,app3 , palabras_hash,palabras_hash_video,listaP,descargador);
+                    VerVideo infoScreen = new VerVideo( buscar , remoteName ,app3,null,null,null,null );
                     app3.pushScreen(infoScreen);
                };break;
                default: return super.invokeAction(action);

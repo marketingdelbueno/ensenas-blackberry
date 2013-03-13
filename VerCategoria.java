@@ -96,14 +96,9 @@ import net.rim.device.api.system.Characters;
 
                    final String localName;
                    final String remoteName =( palabras_hash_video.get(buscar) ).toString();
-                   descargar_video descargador;
-                   
-                   
-                   localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4";
-                   descargador = new descargar_video(remoteName,localName,buscar);
-                   
-                VerVideo infoScreen = new VerVideo( p , localName ,_app ,  palabras_hash,palabras_hash_video,listapalabra,descargador);
-                _app.pushScreen(infoScreen);
+                    VerVideo infoScreen = new VerVideo( buscar , remoteName ,_app,null,null,null,null );
+               //    BuscarCampo.setText("");//se limpia el campo de texto
+                   _app.pushScreen(infoScreen);//y se muestra la pantalla en el dispositivo de la clase VerVideo
                
                }
                else{
@@ -131,15 +126,9 @@ import net.rim.device.api.system.Characters;
 
                    final String localName;
                    final String remoteName =( palabras_hash_video.get(buscar) ).toString();
-                   descargar_video descargador;
+                    VerVideo infoScreen = new VerVideo( buscar , remoteName ,_app,null,null,null,null );
                    
-                   
-                   localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4";
-                   descargador = new descargar_video(remoteName,localName,buscar);
-                   
-                VerVideo infoScreen = new VerVideo( p , localName ,_app ,  palabras_hash,palabras_hash_video,listapalabra,descargador);
-                _app.pushScreen(infoScreen);
-               
+                   _app.pushScreen(infoScreen);//y se muestra la pantalla en el dispositivo de la clase VerVideo
                }
                else{
                    
