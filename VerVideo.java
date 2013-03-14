@@ -1,4 +1,4 @@
-package com.rim.samples.device.enSenas;
+package com.rim.samples.device.EnSenas;
 
 import net.rim.device.api.ui.UiApplication;
 import net.rim.device.api.ui.container.MainScreen;
@@ -36,10 +36,11 @@ import javax.microedition.io.HttpConnection;
     HorizontalFieldManager mostrar_video, mostrar,botones, buscar_manager,problema,espaciador1;
     Hashtable palabras_hash_video,palabras_hash;
     VerticalFieldManager imagen,fondo;
-    Bitmap imagen_ensenas;
+    Bitmap imagen_ensenas, LupaOrig;
     KeywordFilterField campofiltro;
     descargar_video descargador;
     String vid,palabra,pala_sin;
+    BitmapField CampoLupadOrig;    
     BasicEditField buscarCampo;
     ListaPalabra listapalabra;
     AnimatedGIFField f;
@@ -55,7 +56,7 @@ import javax.microedition.io.HttpConnection;
         {            
             _app=app;
             u = new Utilidades();
-            tam_icono=0;
+             tam_icono=0;
             tam_imag=0;
             palabras_hash_video = p_h_v;
             palabras_hash = p_h;
@@ -92,14 +93,8 @@ import javax.microedition.io.HttpConnection;
                 fondo.add(espaciador1);
             }
             add(fondo);
-            if(d!=null){
-                PleaseWaitPopupScreen.showScreenAndWait(/*d,*/palabra/*,this*/);
-            }
-            else
-            {
-                PleaseWaitPopupScreen.showScreenAndWait(/*d,*/palabra/*,this*/);
-                ver_streaming();
-            }
+            PleaseWaitPopupScreen.showScreenAndWait(d,palabra,this);
+           
          }
          
          public boolean cargado(){
@@ -114,25 +109,28 @@ import javax.microedition.io.HttpConnection;
                 if(ya_cargo){
                     vi = new VideoPlay(vid);
                     player = vi.video();
-                    //ya_cargo=false;
+                    ya_cargo=false;
                 }
                
                 try{
-                    player.start();
+                    player.start();                   
                 }
                 catch(MediaException me)
                 {
-                    Dialog.alert("Existen Problemas con el archivo ");
-               
-                    if( ya_cargo ){ 
-                        fondo.replace(mostrar_video,problema);
-                        fondo.invalidate();
-                        descargador.borrar_file();
-                        ya_cargo = false;
+                    try{
+                        player.close();
+                        FileConnection file = (FileConnection) Connector.open(vid);
+                        file.setWritable(true);
+                        file.setReadable(true);
+                        file.delete();
+                        
                     }
+                    catch (IOException e) { Dialog.alert("Error con el archivo: "+e.toString()); } 
+                    Dialog.alert("Ha sucedido un error descargando el archivo, vuelva a intentarlo");
+                    
                 }
-                if ( ya_cargo )
-                    _app.pushScreen(vi);
+                
+                 _app.pushScreen(vi);
                
                 UiApplication.getUiApplication().invokeLater(new Runnable() {
                     public void run() {
@@ -153,28 +151,15 @@ import javax.microedition.io.HttpConnection;
                 }
              }
             }
-            else{
-                if( ya_cargo ){ 
+              else{
+                  if( ya_cargo ){ 
                     fondo.replace(mostrar_video,problema);
                     fondo.invalidate();
                     ya_cargo = false;
-                }
-                Dialog.alert("Para continuar necesita insertar una tarjeta MicroSD");
-            }
+                    }
+                  Dialog.alert("Para continuar necesita insertar una tarjeta MicroSD");
+                  }
         }
-        
-        public void ver_streaming(){
-
-            vi = new VideoPlay(vid);
-            vi.svideo();
-        }
-        
-         public void ver_streaming_repetido(){
-
-            //vi = new VideoPlay(vid);
-            vi.svideo();
-        }
-        
         
         public void cargarbotones()
         {
@@ -240,7 +225,7 @@ import javax.microedition.io.HttpConnection;
             else if( key == Characters.ENTER ){
                 //Se ejecuta la accion del boton que este seleccionado
                 if( play.Seleccionado() || error.Seleccionado()) 
-                    ver_streaming_repetido();//ver();
+                    ver();
                 else if ( twitter.Seleccionado() )  
                     comentar_twitter();
                 else if (descargar.Seleccionado() )
@@ -257,7 +242,7 @@ import javax.microedition.io.HttpConnection;
        switch(action)
         {
             case ACTION_INVOKE: //Trackball click.
-                if( play.Seleccionado() || error.Seleccionado()) ver_streaming_repetido();break;
+                if( play.Seleccionado() || error.Seleccionado()) ver();break;
             default:    
                 return  super.invokeAction(action);
         };   
@@ -286,7 +271,7 @@ import javax.microedition.io.HttpConnection;
                 Browser.getDefaultSession().displayPage( (palabras_hash_video.get(pala_sin) ).toString() );
             }
         else if( play == field || error ==field )
-                ver_streaming_repetido();
+                ver();
     }
     //Elimina el menu de guardado al salir del mainScreen
     public boolean onSavePrompt(){

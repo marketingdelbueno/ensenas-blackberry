@@ -1,6 +1,6 @@
-package com.rim.samples.device.enSenas;
+package com.rim.samples.device.EnSenas;
 
-import com.rim.samples.device.enSenas.resizeBitmap;
+import com.rim.samples.device.EnSenas.resizeBitmap;
 import net.rim.device.api.ui.Graphics;
 import net.rim.device.api.ui.*;
 import net.rim.device.api.system.*;

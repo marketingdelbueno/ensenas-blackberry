@@ -1,9 +1,5 @@
 ## RIM Java Development Environment
 # RIM Project file
-#
-# This file is generated and managed by BlackBerry developer tools.
-# It SHOULD NOT BE modified manually.
-#
 AddOn=0
 AlwaysBuild=0
 [AlxImports
@@ -19,9 +15,8 @@ AutoRestart=0
 ]
 [DependsOn
 ]
-Description=Diccionario de Lenguaje de Senas Venezolano
+Description=Diccionario de Lenguaje de Senas
 ExcludeFromBuildAll=0
-Exported=0
 [Files
 AnimatedGIFField.java
 BotonPersonalizado.java
@@ -75,12 +70,14 @@ img Video\facebook480v.png
 img Video\twitter240v.png
 img Video\twitter300v.png
 img Video\twitter480v.png
+img\banner2.png
+img\campo.psd
 img\cargando.gif
+img\cuadro.png
 img\espacio.png
 img\focusedicon.png
 img\icon.png
-img\logos4biz.png
-img\logothinkasoft.png
+img\lupa.png
 img\thinkasoft.png
 info\info.txt
 Inicio.java
@@ -99,6 +96,7 @@ NeoEssentia.java
 NeoEssentiaScreen.java
 Palabra.java
 Pila_Subcategoria.java
+play-error\error.png
 play-error\error240.png
 play-error\error300.png
 play-error\error480.png
@@ -139,17 +137,14 @@ img\icon.png
 ]
 Listing=0
 Options=-quiet
-OutputFileName=enSenas
+OutputFileName=EnSenas
 [PackageProtection
 ]
 RibbonPosition=0
-[RolloverIcons
-]
 RunOnStartup=0
-SkipCompile=0
 StartupTier=7
 SystemModule=0
-Title=enSenas
+Title=EnSenas
 Type=0
 Vendor=Thinkasoft
 Version=1.0

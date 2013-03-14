@@ -1,4 +1,4 @@
-package com.rim.samples.device.enSenas;
+package com.rim.samples.device.EnSenas;
 
 import net.rim.device.api.ui.component .*;
 import net.rim.device.api.collection.util.*; 
@@ -39,7 +39,9 @@ class ListaPalabra extends SortedReadableList implements KeywordProvider
             else
             {
                 return 0;
-            }          
+            }
+       
+            
         }        
     }    
 }

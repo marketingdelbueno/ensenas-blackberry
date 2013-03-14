@@ -1,9 +1,5 @@
 ## RIM Java Development Environment
 # RIM Project file
-#
-# This file is generated and managed by BlackBerry developer tools.
-# It SHOULD NOT BE modified manually.
-#
 AddOn=0
 AlwaysBuild=0
 [AlxImports
@@ -19,9 +15,8 @@ AutoRestart=0
 ]
 [DependsOn
 ]
-EntryFor=enSenas
+EntryFor=EnSenas
 ExcludeFromBuildAll=0
-Exported=0
 HaveAlxImports=0
 HaveDefs=0
 HaveImports=0
@@ -33,15 +28,12 @@ HaveImports=0
 ]
 Listing=0
 MidletClass=autostart
-Options=-quiet 
+Options=-quiet
 OutputFileName=focusicono
 [PackageProtection
 ]
 RibbonPosition=0
-[RolloverIcons
-]
 RunOnStartup=1
-SkipCompile=0
 StartupTier=7
 SystemModule=1
 Type=3

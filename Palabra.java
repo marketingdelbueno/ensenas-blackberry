@@ -1,5 +1,5 @@
-package com.rim.samples.device.enSenas;
-//una clase con un poco e atributos y metodos para obterne estos atributos
+package com.rim.samples.device.EnSenas;
+
 class Palabra
 {
     private String categoria,sub_categoria;

@@ -1,4 +1,4 @@
-package com.rim.samples.device.enSenas;
+package com.rim.samples.device.EnSenas;
 
 import net.rim.device.api.ui.UiApplication;
 import net.rim.device.api.ui.container.MainScreen;
@@ -106,14 +106,14 @@ class Utilidades {
        if(  Expandir == false){   
             fondo = new VerticalFieldManager(
                 VerticalFieldManager.USE_ALL_WIDTH | VerticalFieldManager.FIELD_HCENTER){
-                //Se cambia el color de fondo del menu principal 
-                public void paint(Graphics graphics)
-                {
-                    graphics.clear();
-                    graphics.setColor( 0xFFFFFF );
-                    graphics.fillRect( 0, 0, Display.getWidth(), Display.getHeight()*80 );
-                    invalidate();
-                    super.paint(graphics);
+            //Se cambia el color de fondo del menu principal 
+            public void paint(Graphics graphics)
+            {
+                graphics.clear();
+                graphics.setColor( 0xFFFFFF );
+                graphics.fillRect( 0, 0, Display.getWidth(), Display.getHeight()*80 );
+                invalidate();
+                super.paint(graphics);
                 }
             };
         }

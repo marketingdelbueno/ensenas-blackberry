@@ -1,4 +1,4 @@
-package com.rim.samples.device.enSenas;
+package com.rim.samples.device.EnSenas;
 
 import net.rim.device.api.ui.UiApplication;
 import net.rim.device.api.ui.container.MainScreen;
@@ -80,8 +80,12 @@ public class VerDiccionario extends MainScreen{
     
               final String localName;
               final String remoteName =( palabras_hash_video.get(buscar) ).toString();//buscar el link del video que le correspode
-               VerVideo infoScreen = new VerVideo( buscar , remoteName ,app3,null,null,null,null );
-               app3.pushScreen(infoScreen);   
+              descargar_video descargador;//variable utilizada para descargar el video
+              localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4"; //lugar donde se almacena el video
+              descargador = new descargar_video(remoteName,localName,buscar);
+                    
+              VerVideo infoScreen = new VerVideo( pal.getpalabra() ,localName,app3 , palabras_hash,palabras_hash_video,listaP,descargador);
+              app3.pushScreen(infoScreen);   
                 
                 return true; //Se retorna verdad para finalizar la accion
             }
@@ -102,7 +106,11 @@ public class VerDiccionario extends MainScreen{
     
                     final String localName;
                     final String remoteName =( palabras_hash_video.get(buscar) ).toString();//buscar el link del video que le correspode
-                    VerVideo infoScreen = new VerVideo( buscar , remoteName ,app3,null,null,null,null );
+                    descargar_video descargador;//variable utilizada para descargar el video
+                    localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4"; //lugar donde se almacena el video
+                    descargador = new descargar_video(remoteName,localName,buscar);
+                    
+                    VerVideo infoScreen = new VerVideo( pal.getpalabra() ,localName,app3 , palabras_hash,palabras_hash_video,listaP,descargador);
                     app3.pushScreen(infoScreen);
                };break;
                default: return super.invokeAction(action);

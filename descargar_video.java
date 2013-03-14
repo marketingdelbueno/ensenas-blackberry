@@ -1,5 +1,5 @@
 
-package com.rim.samples.device.enSenas;
+package com.rim.samples.device.EnSenas;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -64,7 +64,7 @@ class descargar_video implements Runnable {
                 //se hace escribible y leible para luego ser borrado
             }
             
-            if ( !file.exists() ) {//si no existe el archivo, que es la condicion deseada
+            if ( !file.exists() ) {
 
                 String modoConexion;//se determina si se esta conectado a ineternet por medio de alguna red wifi o otro medio distinto
                 
@@ -75,25 +75,24 @@ class descargar_video implements Runnable {
                     modoConexion = ";deviceside=true;apn="+apn;//en caso de ser gastando los megas del plan de datos de la operadora
                 }
                 
-                String currentFile = this.remoteName + modoConexion;//aqui se establece la direccion del archivo mas el tipo de conexion utilizada para la descarga
+                String currentFile = this.remoteName + modoConexion;
                 
-                conn = (HttpConnection) Connector.open(currentFile);//se abre la conexion con el link de descarga
-                status = conn.getResponseCode();//se le asigna a status el un valor que indica si la conexion se establecio bien o no
+                conn = (HttpConnection) Connector.open(currentFile);
+                status = conn.getResponseCode();
    
                 if (status == HttpConnection.HTTP_OK)//si se ha establecido una conexion
                 {                    
-                    InputStream in = conn.openInputStream();//se abre la conexion                     
-                    file.create();//el archivo que ya sabemos de antemano que no existe, se crea
-                    file.setWritable(true);//se hace escribible
-                    OutputStream out = file.openOutputStream();//se establece a la variable "out" como la que va a imprimir en "file"
+                    InputStream in = conn.openInputStream();                    
+                    file.create();
+                    file.setWritable(true);
+                    OutputStream out = file.openOutputStream();
                     int length = -1;
-                    byte[] readBlock = new byte[1024*64];//se lee o se descarga de 256 en 256 bytes por ves
+                    byte[] readBlock = new byte[1024*50];
                     int fileSize = 0;
-                    while ((length = in.read(readBlock)) != -1) {//mientras no se haya leido todo
+                    while ((length = in.read(readBlock)) != -1) {
                         out.write(readBlock, 0, length);
                         fileSize += length;
-                    }
-                    //de aqui en adelante se recaudan datos y se cierran conexiones
+                    }                                    
                     totalSize += fileSize;
                     in.close();
                     conn.close();
@@ -102,21 +101,20 @@ class descargar_video implements Runnable {
                     Thread.yield(); // allow other threads time
                     out.close();
                     file.close();                    
-                    se_descargo=true;                        
-                }
+                    se_descargo=true;
+                        
+                }   
                           
-           //la proxima linea se usa para contar la cantidad de veces que este archivo que se acaba de descargar es descargado,
-           //esto con fines de lograr hacer el modulo de "mas vistos" 
+                     
            String contar = "http://videodiccionario.thinkasoft.com/control.php?id=" + palabra_consultada + modoConexion;
            
-           conn = (HttpConnection) Connector.open(contar);//como antes se establece una conexion con el link en la variable contar
-           status = conn.getResponseCode();//se obtiene el status de la conexion, fallida o lograda
-            if (status == HttpConnection.HTTP_OK)//si se logro una conexion
+           conn = (HttpConnection) Connector.open(contar);
+           status = conn.getResponseCode();
+            if (status == HttpConnection.HTTP_OK)
              {                    
-             //se hace la lectura de los datos de control que tiene la cantidad de veces que se ha descargado una palabra
               InputStream in = conn.openInputStream();                    
               int length = -1;
-              byte[] readBlock = new byte[1024*64];
+              byte[] readBlock = new byte[1024];
               int fileSize = 0;
               while ((length = in.read(readBlock)) != -1)
               in.close();
@@ -134,15 +132,15 @@ class descargar_video implements Runnable {
         }
     }
     
-    public boolean descargado(){//retorna el valor de se_descargo true o false
+    public boolean descargado(){
         return se_descargo;
     }
         
-    public boolean archivo_existe(){//retorna el valor de file.exists() true o false
+    public boolean archivo_existe(){
       return file.exists();
         }
     
-    public void borrar_file(){//borra un archivo arroja excepciones en caso de este no existir
+    public void borrar_file(){       
        try{
         file.delete();
         }

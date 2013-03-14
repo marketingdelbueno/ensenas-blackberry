@@ -1,6 +1,5 @@
-package com.rim.samples.device.enSenas;
-//esta clase no necesita explicacion simplemente se bajo de internet y se encarga de cambiarle el tamaño a lacualquier imagen a la dimension que
-//se desee
+package com.rim.samples.device.EnSenas;
+
 import net.rim.device.api.system.*;
 
  public class resizeBitmap {

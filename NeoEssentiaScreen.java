@@ -1,4 +1,4 @@
-package com.rim.samples.device.enSenas;
+package com.rim.samples.device.EnSenas;
 
 import net.rim.device.api.ui.UiApplication;
 import net.rim.device.api.ui.container.MainScreen;
@@ -35,70 +35,47 @@ import net.rim.device.api.ui.component.LabelField;
 
    public class NeoEssentiaScreen extends MainScreen implements FieldChangeListener
 {
-    private BasicEditField BuscarCampo;//esta clase muestra un recuadro donde se pueden escribir cosas tiene un conjunto de
-    //metodos para manipular dicha clase
-    private BotonPersonalizado twitter,facebook,catalogo,masvisto,info,dicci;//esta clase fue implementada por nosotros para crear botones
-    //no estandar sino con la forma el dise;o que nosotros querramos
+    private HorizontalFieldManager buscarCamp;
+    private BasicEditField BuscarCampo;
+    private BotonPersonalizado twitter,facebook,catalogo,masvisto,info,dicci;
     private Vector palabras;
     private ListaPalabra listapalabra;
-    private Hashtable palabras_hash_video,palabras_hash;//esta clase viene en la api que es lo que llamariamos comunmente tabla de hash
-    private HorizontalFieldManager buscarCamp, hor, hor1, hor2, hor3,espaciador1;//HorizontalFieldManager clase que usamos mucho
-    //esta clase ordena como un arreglo horizontal, campos que pueden tener cualquier cosa desde fotos videos textos en forma de labels etc
-    //       |          |         |               |              |     |                |
-    //       | "dibujo" | "texto" | "otro dibujo" | "un videito" | ... | "ultimo campo" |
-    //       |          |         |               |              |     |                |
-    private VerticalFieldManager vert,hor_vid,fondo;
-    //esta clase VerticalFieldManager es parecidad a la HorizontalFieldManager solo que alinea a los campos de forma vertical
-    //     _____________
-    //     | "campo 1" |
-    //     _____________
-    //     | "campo 2" |
-    //     _____________
-    //     | "campo 3" |
-    //     _____________
-    //     | "campo 4" |
-    //     _____________
-    //     | "campo 5" |
-    //     _____________
-    //  una matriz seria la combinacion de un horizontal con un vertical field manager ! XD 
+    private Hashtable palabras_hash_video,palabras_hash;
+    private HorizontalFieldManager hor, hor1, hor2, hor3,espaciador1;
+    private VerticalFieldManager vert,hor_vid;
     private Bitmap imagen_ensenas;
     private BitmapField CampoImagenEnsenas;    
     private NeoEssentia _app;    
     private Vector categorias;
     private Utilidades u;
+    private VerticalFieldManager fondo;
     private String nombre_icono;
     private int tam_icono;
     private RichTextField estado;
     
-    // ***************************************************************** //
-    // esta es la segunda pantalla que se ejecuta al abrir la aplicacion //    
-    // ***************************************************************** //
-    
     public NeoEssentiaScreen(NeoEssentia app)
     {        
-        _app = app;//se pasa la aplicacion a esta pantalla
+        _app = app;
+          
         try {
-           //se establece la conexion con la carpeta temporal donde se han de guardar los videos que se han de ver 
            FileConnection temporal = (FileConnection) Connector.open("file:///SDCard/BlackBerry/temporalNeoEssentia/");
              if (!temporal.exists()) {
-                temporal.mkdir();// si no existe el direcctorio temporalNeoEssentia se crea condicion que es la ideal
-                //esta carpeta se borra al salir de la aplicacion por ende, si esta carpeta existe, es un PROBLEMA!
+                temporal.mkdir();
              }
-           temporal.close();//se cierra la conexion ya que la carpeta ahora existe
-        }catch (IOException ex) {  }//se maneja la excepcion
+           temporal.close();
+        }catch (IOException ex) {  }
                 
-        u = new Utilidades();//se crea la variable u de tipo Utilidades que es la que tiene muchas cosas importantes
-        hor = new HorizontalFieldManager(HorizontalFieldManager.FIELD_HCENTER); 
-        //este es un verticalfieldmanager vulgar pero a continuacion se le reimplementan algunos metodos para obtener las siguientes funcionalidades
+        u = new Utilidades();
+        hor = new HorizontalFieldManager(HorizontalFieldManager.FIELD_HCENTER);
         hor_vid = new VerticalFieldManager(VerticalFieldManager.FIELD_HCENTER ){
-            
-            public void paint(Graphics graphics)//este metodo paint le pone un colo al fondo del verticalfieldmanager
+            public void paint(Graphics graphics)
             {
                 graphics.clear();
-                graphics.setColor( 0xFFFFFF );//color blanco
-                graphics.fillRect( 0, 0,  Display.getWidth(),  Display.getHeight() );//Display.getWidth() y Display.getHeight() te retornan el anto y el ancho
-                graphics.setColor( Color.BLACK );
-                invalidate();//invalidate hace es refrescar la pantalla
+            graphics.setColor( 0xFFFFFF );
+            graphics.fillRect( 0, 0,  Display.getWidth(),  Display.getHeight() );
+            graphics.setColor( Color.BLACK );
+                
+                invalidate();
                 super.paint(graphics);
             }
         };
@@ -125,9 +102,7 @@ import net.rim.device.api.ui.component.LabelField;
         aux.add(BuscarCampo);
         buscarCamp.add(aux);
         String extension = new String("");       
-        //se pregunta el tama;o de la pantalla y se determina el tamano de los iconos
         if( (int)Graphics.getScreenWidth() <= (int)320 ){
-            //hau imagenes con un ancho de 240 y se llamaria nombre_de_imagen240.png
             extension = new String("240");
             tam_icono = 70;
             }    
@@ -139,118 +114,107 @@ import net.rim.device.api.ui.component.LabelField;
             extension = new String("480");
             tam_icono = 128;
             }
-        //aki se crean los botones personalizados catalogo, mas visto, info, facebook, twitter, dicci, estudia con detenimiento la clase boton personalizado 
+     
         catalogo = new BotonPersonalizado("Catálogo",this,extension, Field.FOCUSABLE, Bitmap.getBitmapResource("catalogo"+ extension +".png" ),Graphics.getScreenHeight(),Graphics.getScreenWidth(),null);
         masvisto = new BotonPersonalizado("Más Vistos",this,extension, Field.FOCUSABLE, Bitmap.getBitmapResource("vistos"+ extension +".png"),Graphics.getScreenHeight(),Graphics.getScreenWidth(),null);
         info = new BotonPersonalizado("Ayuda e Información",this,extension, Field.FOCUSABLE, Bitmap.getBitmapResource( "info"+ extension +".png"),Graphics.getScreenHeight(),Graphics.getScreenWidth(),null);
         facebook = new BotonPersonalizado("Facebook",this,extension, Field.FOCUSABLE, Bitmap.getBitmapResource( "facebook"+ extension +".png"),Graphics.getScreenHeight(),Graphics.getScreenWidth(),null);
         twitter = new BotonPersonalizado("Twitter",this,extension, Field.FOCUSABLE, Bitmap.getBitmapResource( "twitter"+ extension +".png"),Graphics.getScreenHeight(),Graphics.getScreenWidth(),null);
         dicci = new BotonPersonalizado("Buscar A-Z",this,extension, Field.FOCUSABLE, Bitmap.getBitmapResource( "book"+ extension +".png"),Graphics.getScreenHeight(),Graphics.getScreenWidth(),null);
-        //se le activa la opcion de que puedan ser clickeados
+      
         twitter.setChangeListener(this);
         facebook.setChangeListener(this);
         catalogo.setChangeListener(this);
         info.setChangeListener(this);
         dicci.setChangeListener(this);
-        masvisto.setChangeListener(this);
-        //ahora se asignan horizontalfieldmanagers a verticalfieldsmanager y viceversa
-        VerticalFieldManager vert = u.titulo();
-        fondo = u.fondo(false);
+        masvisto.setChangeListener(this);        
+        VerticalFieldManager vert = u.titulo();        
+        fondo = u.fondo(false);        
+        /*int ancho_espacio=(int)((Graphics.getScreenWidth()-buscarCamp.getPreferredWidth())/16);
+        Bitmap espa = Bitmap.getBitmapResource("espacio.png");
+        resizeBitmap resize2 = new resizeBitmap(espa,ancho_espacio,1);        
+        hor.add( (new BitmapField( resize2.get_bitmap() , Field.NON_FOCUSABLE )) );
+        */
         hor.add(buscarCamp);
         vert.add(hor);
-        this.setBanner(vert);// se le asigna al banner el logo de ensenas junto con el campo de escritura estos siempre van a ser visibles y estaticos        
+        this.setBanner(vert);
         
         hor2.add(catalogo);hor2.add(dicci);hor2.add(masvisto);
         hor3.add(info);hor3.add(facebook);hor3.add(twitter);
         fondo.add(hor2);
         fondo.add(hor3);
         add(fondo);
-        //todo esto antes hecho quedaria algo asi
-        /*
-                   _____________________________________________________
-                  ||   hor2 = ||  catalogo  ||  dicci     ||   masvisto ||
-          fonfo=  ||__________||____________||____________||____________||
-                  ||   hor3 = ||  info      ||  facebook  ||   twitter  ||
-                  ||__________||____________||____________||____________||
-         
-        */
-       // ******************************estas lineas fueron borradas del codigo ***********************************
-       //las proximas 7 lineas calculan el tama;o de la pantalla 
-       /*int altura_espacio=(int)(Graphics.getScreenHeight()-(tam_icono*2)-u.banner().getBitmapHeight()-u.titulo().getPreferredHeight()-hor.getPreferredHeight());
+        
+       int altura_espacio=(int)(Graphics.getScreenHeight()-(tam_icono*2)-u.banner().getBitmapHeight()-u.titulo().getPreferredHeight()-hor.getPreferredHeight());
        if(altura_espacio>0){
            Bitmap esp = Bitmap.getBitmapResource("espacio.png");
            resizeBitmap resize = new resizeBitmap(esp,esp.getWidth(),(int)(altura_espacio));      
            espaciador1.add(new BitmapField( resize.get_bitmap() , Field.NON_FOCUSABLE ));
            fondo.add(espaciador1);
-       }*/
-       // ******************************las deje por prudencia **************************************************** 
-       
-       
-        //en las proximas lineas se le asigna al estado el valor de "buscar..." dado a que el primer elemento que entra en focus por defecto es el
-        //campo de busqueda, se agrega tanto el estado como lo que nosotros llamamos banner() a la pantalla en la parte inferior de manera estatica
+       }
+        
         estado = new RichTextField("Buscar...",Field.NON_FOCUSABLE);
         hor_vid.add( estado );
         hor_vid.add( u.banner() );
         this.setStatus( hor_vid );
     }
     
-    //en caso de estar seleccionado algun boton se le asigna a la variable estado el nombre del icono seleccionado
     public void set_estado(String e){
         estado.setText(e);
         this.invalidate();
     }
  
-    //esta funcion le asigna funcionalidades a las teclas al ser presionadas, especificamente a la tecla "ENTER" 
-    protected boolean keyChar(char key, int status, int time)
-    {
-        if ( key == Characters.ENTER )//si es Enter la tecla presionada
-        {        
-            if(  BuscarCampo.isFocus()){//si se esta situado en el campo BuscarCampo entonces
-                IrVideo();//se va a IrVideo()
-                
-            }
-            else if(catalogo.Seleccionado() )//si se esta en el boton catalogo, ese al hacercele foco su atributo seleccionado se hace true 
-            //entonces catalogo.Seleccionado() es igual a true
+    
+      protected boolean keyChar(char key, int status, int time)
+        {
+           if (key == Characters.ENTER )
             {
-                VerCategoria infoScreen = new VerCategoria(categorias,palabras_hash,palabras_hash_video,_app,listapalabra);//se crea lña variable
-                //VerCategoria con todos sus atributos
-                _app.pushScreen(infoScreen); 
-                //y se pone en pantalla la pantalla propia de VerCategoria                
+           
+           if(  BuscarCampo.isFocus()){
+                IrVideo();
+               
             }
-            else if(masvisto.Seleccionado() ){//el mismo proceso anterior para cada uno de los botones
+           else if(catalogo.Seleccionado() )
+            {
+                VerCategoria infoScreen = new VerCategoria(categorias,palabras_hash,palabras_hash_video,_app,listapalabra);
+                _app.pushScreen(infoScreen); 
+               
+            }
+            else if(masvisto.Seleccionado() ){
                 new VerVisto();
-                
+               
                 }
-            else if( info.Seleccionado() ){//el mismo proceso anterior para cada uno de los botones
-                    VerInfo infoScreen = new  VerInfo();
+            else if( info.Seleccionado() ){
+                 VerInfo infoScreen = new  VerInfo();
                 _app.pushScreen(infoScreen);
                 
                 }
-            else if( facebook.Seleccionado() ){//el mismo proceso anterior para cada uno de los botones
+            else if( facebook.Seleccionado() ){
                 new VerFacebook();
                 
                 }
-            else if( twitter.Seleccionado() ){//el mismo proceso anterior para cada uno de los botones
+            else if( twitter.Seleccionado() ){
                 new VerTwitter();
-                
+               
                 }
-            else if( dicci.Seleccionado() ){//el mismo proceso anterior para cada uno de los botones
-                    VerDiccionario infoScreen = new VerDiccionario(listapalabra,_app, palabras_hash,palabras_hash_video);
+            else if( dicci.Seleccionado() ){
+                 VerDiccionario infoScreen = new VerDiccionario(listapalabra,_app, palabras_hash,palabras_hash_video);
                 _app.pushScreen(infoScreen);
-                
+               
                 }
-            return true;
-        }
-            return super.keyChar(key, status, time);
-    }
+                return true;
+            }
+                return super.keyChar(key, status, time);
+            
+       }
     
-    public boolean invokeAction(int action)// esta funcion se ejecuta cuando se unde la bolita o trackball del Blacberry
+    public boolean invokeAction(int action)
     {        
        switch(action)
         {
-            case ACTION_INVOKE: // Trackball click
-                if( BuscarCampo.isFocus() ){//si se esta en buscar campo entonces
-                    IrVideo();//se va a IrVideo
+            case ACTION_INVOKE: // Trackball click.
+                if( BuscarCampo.isFocus() ){
+                    IrVideo();
                     return true;
                     }
         }    
@@ -307,14 +271,15 @@ import net.rim.device.api.ui.component.LabelField;
         }
         catch(IOException ioe)
         {
-            System.out.println("Error leyendo los datos");
+        System.out.println("Error leyendo los datos");
                     
         } 
         return palabras;
     }
 
-    public void fieldChanged(Field field, int context)//esto sucede cuando se le da al trackball ubicado en un boton 
-    {        
+    public void fieldChanged(Field field, int context)
+    {
+        
         if( field == twitter ){
                 new VerTwitter();
             
@@ -346,69 +311,50 @@ import net.rim.device.api.ui.component.LabelField;
    
    public void IrVideo(){
        
-        String buscar = u.quitar_carac_espec( BuscarCampo.getText().toString() );//se toma el texto del campo editable "BuscaCampo"                      
-        if( palabras_hash.containsKey( buscar ) == true ){//aki se verifica si la palabra existe en la lista de palabras,
-                                                            // esto seria falso tambien en caso de que el campo de busqueda este vacio
-            
-            String pala_correcta = ( palabras_hash.get(buscar) ).toString();//aki ya la palabra con el formato deseado de escritura
-                                                                            //es decir sin acentos y sin caracteres especiales
+               String buscar = u.quitar_carac_espec( BuscarCampo.getText().toString() );                      
+               if( palabras_hash.containsKey( buscar ) == true ){
+                   
+                   String pala_correcta = ( palabras_hash.get(buscar) ).toString();                    
 
-            final String localName;
-            final String remoteName =( palabras_hash_video.get(buscar) ).toString();
-            
-            if(remoteName.equals("")){
-                Dialog.alert("El video no está en la base de datos");  
-            }
-            /*else if(remoteName.charAt(0) == 'h' ){    //si todo bien la palabra existe y eso
-                descargar_video descargador;//se declara el hilo descargador mas aun no se lanza
-                localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4";
-                FileConnection file;
-                 try {
-                    file = (FileConnection) Connector.open(localName);//se establece una conexion con el archivo a abrir
-                    if(  file.exists() ){
-                        file.setWritable(true);
-                        file.delete();
-                        //se hace escribible y leible para luego ser borrado
+                   final String localName;
+                   final String remoteName =( palabras_hash_video.get(buscar) ).toString();
+                   
+                   if(remoteName.equals("")){
+                     Dialog.alert("El video no está en la base de datos");  
+                       }
+                   else{    
+                   descargar_video descargador;
+                   localName = "file:///SDCard/BlackBerry/temporalNeoEssentia/"+buscar+".mp4";
+                   descargador = new descargar_video(remoteName,localName,buscar);
+                        
+                   VerVideo infoScreen = new VerVideo( pala_correcta , localName ,_app,palabras_hash,palabras_hash_video,listapalabra,descargador );
+                   BuscarCampo.setText("");
+                   _app.pushScreen(infoScreen);
                     }
-                } catch (IOException e) { } catch (Exception e) {}
-                
-                descargador = new descargar_video(remoteName,localName,buscar);//se lanza el hilo
-                // y acontinuacion se llama a la clase VerVideo donde se hace todo lo necesario para ver el video una vez descargado
-                VerVideo infoScreen = new VerVideo( pala_correcta , localName ,_app,palabras_hash,palabras_hash_video,listapalabra,descargador );
-                BuscarCampo.setText("");//se limpia el campo de texto
-                _app.pushScreen(infoScreen);//y se muestra la pantalla en el dispositivo de la clase VerVideo
-            }*/
-            else{    //prueba
-                
-                
-                VerVideo infoScreen = new VerVideo( pala_correcta , remoteName ,_app,palabras_hash,palabras_hash_video,listapalabra,null );
-                BuscarCampo.setText("");//se limpia el campo de texto
-                _app.pushScreen(infoScreen);//y se muestra la pantalla en el dispositivo de la clase VerVideo
-            }
-        }
-        else{
-            Dialog.alert("No se encontró la palabra");
-        }       
-    }
+                   }
+                else{
+                    Dialog.alert("No se encontró la palabra");
+                    }
+       
+       }
    
-    public boolean onClose()//aqui ya se esta cerrando la aplicacion
+    public boolean onClose()
     {
-        try {
-            FileConnection file = (FileConnection) Connector.open("file:///SDCard/BlackBerry/temporalNeoEssentia/");//se abre una conexion con la 
-            //carpeta temporal temporalNeoEssentia, esto con el fin de borrarla.
-             if (file.exists()){//si existe, lo cual TIENE que pasar, sino... es un problemon...
-                   while(file.list().hasMoreElements()){//se borran en este while todos los videos que se encuentren adentro
+                try {
+            FileConnection file = (FileConnection) Connector.open("file:///SDCard/BlackBerry/temporalNeoEssentia/");
+             
+             if (file.exists()) {
+                   while(file.list().hasMoreElements()){
                         FileConnection temp = (FileConnection) Connector.open("file:///SDCard/BlackBerry/temporalNeoEssentia/"+file.list().nextElement().toString());
                         temp.delete();
                         temp.close();
-                   }//una ves ya la carpeta vacia
-                   file.delete();//se borra la carpeta
+                   }
+                   file.delete();
              }
-             file.close();//y se cierra la conexion con dicha carpeta
+             file.close();
         }catch (IOException ex) {  }
-        Dialog.alert("Vuelve pronto");//ya que el close es un evento que se lanza en un hilo se puede llamar trankilamente a Dialog.Alert que 
-        //muestra un cuadrito con el texto vuelve pronto
-        System.exit(0);//y se cierra finalmente el programa
+        Dialog.alert("Vuelve pronto");
+        System.exit(0);
 
         return true;
     }
