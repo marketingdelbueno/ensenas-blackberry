@@ -87,7 +87,7 @@ class descargar_video implements Runnable {
                     file.setWritable(true);
                     OutputStream out = file.openOutputStream();
                     int length = -1;
-                    byte[] readBlock = new byte[1024*50];
+                    byte[] readBlock = new byte[1024*500];
                     int fileSize = 0;
                     while ((length = in.read(readBlock)) != -1) {
                         out.write(readBlock, 0, length);
