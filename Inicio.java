@@ -45,7 +45,7 @@ public class Inicio extends MainScreen{
         }      
 
   public void ver_propaganda(){
-      /*
+      
          VideoPlay vi = new VideoPlay("/videos/propaganda.mp4");
          this.setBanner(vi.field());
          
@@ -58,9 +58,9 @@ public class Inicio extends MainScreen{
           }
          
          UiApplication.getUiApplication().invokeLater(new Runnable() {
-                public void run() {*/
-                    menu_principal();/*
+                public void run() {
+                    menu_principal();
                 }
-            },7700,false );      */
+            },7700,false );      
       }
 }

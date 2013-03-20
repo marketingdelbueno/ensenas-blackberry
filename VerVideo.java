@@ -127,7 +127,7 @@ import javax.microedition.io.HttpConnection;
                     }
                     catch (IOException e) { Dialog.alert("Error con el archivo: "+e.toString()); } 
                     Dialog.alert("Ha sucedido un error descargando el archivo, vuelva a intentarlo");
-                    
+                    UiApplication.getUiApplication().popScreen(this);
                 }
                 
                  _app.pushScreen(vi);

@@ -2,7 +2,7 @@ MIDlet-Name: EnSenas
 MIDlet-Version: 1.0
 MIDlet-Vendor: Thinkasoft
 MIDlet-Jar-URL: EnSenas.jar
-MIDlet-Jar-Size: 3540884
+MIDlet-Jar-Size: 3569347
 MIDlet-Description: Diccionario de Lenguaje de Senas
 MicroEdition-Profile: MIDP-2.0
 MicroEdition-Configuration: CLDC-1.1
@@ -14,125 +14,125 @@ MIDlet-3: ,,autostart
 RIM-MIDlet-Flags-3: 3
 Manifest-Version: 1.0
 RIM-COD-URL: EnSenas.cod
-RIM-COD-Size: 41832
-RIM-COD-Creation-Time: 1363396992
+RIM-COD-Size: 41684
+RIM-COD-Creation-Time: 1363819133
 RIM-COD-Module-Name: EnSenas
 RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_browser
-RIM-COD-SHA1: 40 c8 1f df 7a c6 e3 56 2d ca 2d ef 8b 18 5a 97 fb c2 67 ed
+RIM-COD-SHA1: 2b f4 41 90 b4 d2 c0 07 32 e4 5b 28 e8 00 e7 60 31 e9 3d cc
 RIM-COD-URL-1: EnSenas-1.cod
-RIM-COD-Size-1: 58732
-RIM-COD-SHA1-1: 5b 6b c3 01 50 c4 3d 16 6c 37 48 61 f3 fe e7 68 56 02 ec d1
+RIM-COD-Size-1: 63328
+RIM-COD-SHA1-1: 5a 76 57 ac f8 f9 0c 02 fa a6 9f 02 40 50 36 de f3 e6 51 36
 RIM-COD-URL-2: EnSenas-2.cod
-RIM-COD-Size-2: 61984
-RIM-COD-SHA1-2: b6 c9 95 57 90 b1 e7 69 a1 3f ca aa 93 02 e4 63 7c a4 e4 c2
+RIM-COD-Size-2: 61976
+RIM-COD-SHA1-2: 0a dd 5f 13 ab 28 68 ce a2 29 2d 62 e8 54 83 e1 28 97 80 92
 RIM-COD-URL-3: EnSenas-3.cod
-RIM-COD-Size-3: 59496
-RIM-COD-SHA1-3: 3e 47 f8 e3 83 6f 0b 71 b8 b0 27 65 ce 92 17 0b 93 3b 2f b4
+RIM-COD-Size-3: 62544
+RIM-COD-SHA1-3: 85 05 0a 63 cf 4b cf f1 c7 0a 6f 52 0c 9b d8 6d 35 99 7f 7e
 RIM-COD-URL-4: EnSenas-4.cod
-RIM-COD-Size-4: 57860
-RIM-COD-SHA1-4: 0a f9 0e 17 e5 e8 cf 4b aa fe c5 44 19 68 8c 98 f4 30 2e 80
+RIM-COD-Size-4: 61836
+RIM-COD-SHA1-4: 3a 4b b8 4c 09 4e 6b c1 3f dc b3 0f d3 ff b4 4b 6d 8d 02 a2
 RIM-COD-URL-5: EnSenas-5.cod
-RIM-COD-Size-5: 40092
-RIM-COD-SHA1-5: be 31 d1 5f f1 83 3e d2 09 07 42 7d b8 33 34 55 c4 d4 5f 19
+RIM-COD-Size-5: 49640
+RIM-COD-SHA1-5: c2 cb 60 14 c1 c2 d4 9c aa 91 bc a0 87 d5 ab 70 f4 af 40 17
 RIM-COD-URL-6: EnSenas-6.cod
 RIM-COD-Size-6: 37776
-RIM-COD-SHA1-6: 57 4c 53 32 9e 45 91 6f 7e 85 cb 04 c3 81 1f 80 9f 26 00 a6
+RIM-COD-SHA1-6: f9 80 0b 79 22 18 b0 b8 8d aa ba e0 b6 0f 85 29 85 66 64 75
 RIM-COD-URL-7: EnSenas-7.cod
 RIM-COD-Size-7: 46228
-RIM-COD-SHA1-7: ae 2c a4 23 a0 82 3b 88 95 1c d8 c9 9b 6e 98 b1 34 8b 83 60
+RIM-COD-SHA1-7: 62 fd a7 85 12 7c 6d 7d 74 2d b7 b1 c7 97 ad d7 50 56 00 ca
 RIM-COD-URL-8: EnSenas-8.cod
 RIM-COD-Size-8: 60304
-RIM-COD-SHA1-8: 15 93 60 3c ff 7d c2 30 d5 8e e8 37 c9 9f 4e ce c5 fe 77 80
+RIM-COD-SHA1-8: c4 c5 89 3f 60 e3 cf b0 96 96 54 af cc 7f c1 ca b5 b0 60 ed
 RIM-COD-URL-9: EnSenas-9.cod
-RIM-COD-Size-9: 61984
-RIM-COD-SHA1-9: b0 4e f2 05 06 29 c9 d1 e2 1a 8c 93 ac ef 6f a9 be 1c 85 99
+RIM-COD-Size-9: 61972
+RIM-COD-SHA1-9: fa f8 34 6b 1e 7c f0 01 d3 1c c4 d9 d2 96 c8 da 10 af 2c 33
 RIM-COD-URL-10: EnSenas-10.cod
-RIM-COD-Size-10: 61984
-RIM-COD-SHA1-10: 7e 51 bf f2 f4 b8 b4 55 fe d7 b8 d5 8f 35 10 ad c3 66 5f a0
+RIM-COD-Size-10: 61972
+RIM-COD-SHA1-10: 3a 5d af cb 7f 29 bb be 59 52 0b 2b 35 87 64 b1 26 cb 61 31
 RIM-COD-URL-11: EnSenas-11.cod
-RIM-COD-Size-11: 61984
-RIM-COD-SHA1-11: dd 88 0e dc 5f b8 68 38 36 18 7c 2f 7b 43 81 dd 7d 5f a5 85
+RIM-COD-Size-11: 58008
+RIM-COD-SHA1-11: 8e 88 37 f4 45 e1 17 59 a5 d8 0d ad 5b 6e 97 a1 ac 7d 7a 5d
 RIM-COD-URL-12: EnSenas-12.cod
-RIM-COD-Size-12: 56448
-RIM-COD-SHA1-12: 3b a9 ea b6 31 76 87 90 b3 c9 50 9d 1f 81 88 ef 0d 68 75 ba
+RIM-COD-Size-12: 61972
+RIM-COD-SHA1-12: fd c0 f8 15 9b 4a f7 3c b3 65 a0 c5 ed b1 13 8d b9 b5 91 9f
 RIM-COD-URL-13: EnSenas-13.cod
-RIM-COD-Size-13: 61984
-RIM-COD-SHA1-13: 1e 07 9c e2 5e ac 5d bf 4a 57 2c f9 c3 ff d4 f0 fa 7d 2d f6
+RIM-COD-Size-13: 61972
+RIM-COD-SHA1-13: e1 c0 c2 0c ab 7f 07 ac dd 0a b6 05 94 fe 7f c5 7a ca 51 c7
 RIM-COD-URL-14: EnSenas-14.cod
-RIM-COD-Size-14: 61984
-RIM-COD-SHA1-14: fa 89 e5 36 ac 51 68 c3 3b e4 83 94 1d 7e 99 6b f9 5b eb 52
+RIM-COD-Size-14: 61972
+RIM-COD-SHA1-14: 80 b9 f2 11 e7 cd 97 a5 b5 eb 14 56 ee 41 9b 1d 38 bb 50 ea
 RIM-COD-URL-15: EnSenas-15.cod
-RIM-COD-Size-15: 61984
-RIM-COD-SHA1-15: 02 62 6d e2 9d 4a 28 f2 71 7f ed d5 c2 f0 cd 6f 69 47 70 b2
+RIM-COD-Size-15: 61972
+RIM-COD-SHA1-15: 0a 06 81 a8 ef 35 cc 8c ac 12 ac 60 00 2b 3f e4 75 1d d1 e8
 RIM-COD-URL-16: EnSenas-16.cod
 RIM-COD-Size-16: 55352
-RIM-COD-SHA1-16: 9b 48 6e 49 22 8d b5 c8 91 08 2b f0 18 b6 38 85 ea 44 64 73
+RIM-COD-SHA1-16: 16 b3 da 5f e6 a7 8c 1a e6 34 7d fd 3f ef 60 1d 03 f7 55 0f
 RIM-COD-URL-17: EnSenas-17.cod
 RIM-COD-Size-17: 45348
-RIM-COD-SHA1-17: 0b dd 62 8f 6b 99 37 3f 53 9d 6b 22 1e 5f dd df 7c c2 55 78
+RIM-COD-SHA1-17: de 1b a3 60 a6 0c db 14 f9 7d 91 c8 55 34 16 e1 87 7f db 52
 RIM-COD-URL-18: EnSenas-18.cod
 RIM-COD-Size-18: 42108
-RIM-COD-SHA1-18: d8 e8 33 32 ee 8d f8 b3 c9 3b 29 77 55 99 92 34 67 fa 82 24
+RIM-COD-SHA1-18: fc 44 27 ad a9 02 4e 79 0d cc b8 82 6b 64 c4 c4 23 f7 d2 39
 RIM-COD-URL-19: EnSenas-19.cod
 RIM-COD-Size-19: 50652
-RIM-COD-SHA1-19: a9 52 50 87 75 9e 48 66 bc 90 d8 2a cd b9 02 f1 23 86 83 1c
+RIM-COD-SHA1-19: 19 cd ad 30 d1 f2 cc 4c 0e 65 40 0c 02 6d cb 92 3d 91 16 5d
 RIM-COD-URL-20: EnSenas-20.cod
 RIM-COD-Size-20: 49232
-RIM-COD-SHA1-20: b9 8d 69 8a 2c e9 03 f4 d6 f6 d3 b5 b5 3b 11 c7 59 c0 e8 30
+RIM-COD-SHA1-20: 61 58 8d da e4 03 52 ab 2c a0 e0 07 e4 02 42 0c c2 1a 9c c8
 RIM-COD-URL-21: EnSenas-21.cod
-RIM-COD-Size-21: 57148
-RIM-COD-SHA1-21: 8c 9c 97 a0 d1 3b 79 3f 08 31 a1 ce ae 17 8f de 81 48 1f ca
+RIM-COD-Size-21: 56448
+RIM-COD-SHA1-21: 93 5d 12 49 08 a8 8d 42 e4 81 63 ef ec d9 66 59 b5 52 4b b8
 RIM-COD-URL-22: EnSenas-22.cod
-RIM-COD-Size-22: 50648
-RIM-COD-SHA1-22: b7 72 2e 8e e4 f6 80 a1 ce 68 78 41 c4 9f 6c c3 68 98 cd da
+RIM-COD-Size-22: 57148
+RIM-COD-SHA1-22: a3 ac 6b 2d b7 68 8e 0b 1b d6 c7 b7 ad da 0a 73 e3 2e db cb
 RIM-COD-URL-23: EnSenas-23.cod
 RIM-COD-Size-23: 31572
-RIM-COD-SHA1-23: e4 53 20 33 fb 5d 0c de e8 48 61 fa 55 96 cd b4 42 0a c8 21
+RIM-COD-SHA1-23: a4 b7 06 d3 fa 82 46 07 8b 19 48 48 19 12 69 7c c1 35 75 5c
 RIM-COD-URL-24: EnSenas-24.cod
-RIM-COD-Size-24: 61992
-RIM-COD-SHA1-24: a3 6b 01 c2 56 c0 64 bc 69 7c c8 a4 fe 2b 6a 7f 45 ea 4d fb
+RIM-COD-Size-24: 61984
+RIM-COD-SHA1-24: c5 5d 81 ae c0 19 d2 70 ee ad cb 11 d8 25 a7 d8 d2 94 58 5f
 RIM-COD-URL-25: EnSenas-25.cod
-RIM-COD-Size-25: 61932
-RIM-COD-SHA1-25: 71 18 7a ed 9b 4a 19 d4 e9 c1 3e 14 0d ac b3 f0 1f 6e da 70
+RIM-COD-Size-25: 61924
+RIM-COD-SHA1-25: 11 f9 f1 b6 36 c2 30 e0 b0 94 a8 2b 48 48 cf 67 65 9b 2e d8
 RIM-COD-URL-26: EnSenas-26.cod
-RIM-COD-Size-26: 61932
-RIM-COD-SHA1-26: 72 9b fe 68 fa 9a f9 9f 03 ab b4 bb 7a a1 bd 49 9a c1 63 9e
+RIM-COD-Size-26: 61924
+RIM-COD-SHA1-26: fd 28 d0 e6 b0 73 03 e8 2c 8b 13 b3 bb f7 f1 2f 37 c8 ef 2a
 RIM-COD-URL-27: EnSenas-27.cod
-RIM-COD-Size-27: 61932
-RIM-COD-SHA1-27: b0 90 5a fd cc 82 48 a7 1e 1b 98 61 da 7a 20 03 d0 f6 dc ab
+RIM-COD-Size-27: 61924
+RIM-COD-SHA1-27: 67 60 3e 93 62 a3 f1 12 a3 94 88 bd 3c 04 b7 3a f7 fe 92 7b
 RIM-COD-URL-28: EnSenas-28.cod
-RIM-COD-Size-28: 61932
-RIM-COD-SHA1-28: cf 90 ff 63 e5 9d 08 ba e6 1a bf 9f 46 7f 9a d4 5e f4 ad 5a
+RIM-COD-Size-28: 61924
+RIM-COD-SHA1-28: 24 86 87 54 15 00 ec cb bc fc 8f b4 07 82 dc 4e 6f fb 62 c0
 RIM-COD-URL-29: EnSenas-29.cod
-RIM-COD-Size-29: 46132
-RIM-COD-SHA1-29: b8 36 a5 96 b5 db 02 5f 64 de 68 84 f0 b7 6c d4 d4 3d f7 91
+RIM-COD-Size-29: 46184
+RIM-COD-SHA1-29: 7c 06 fc fe 86 07 24 b4 b3 02 3f d3 d4 57 da ea 6e 5f a8 6b
 RIM-COD-URL-30: EnSenas-30.cod
-RIM-COD-Size-30: 38948
-RIM-COD-SHA1-30: 7b a8 2b fd b3 69 72 ac 46 c8 bf 06 34 05 43 e8 63 b0 c3 94
+RIM-COD-Size-30: 38956
+RIM-COD-SHA1-30: 8b 61 d5 4a 91 8e b7 5c 48 4a ab 83 dd 87 69 ba ed 7a 50 66
 RIM-COD-URL-31: EnSenas-31.cod
-RIM-COD-Size-31: 45092
-RIM-COD-SHA1-31: 63 75 e1 8e 53 b8 39 c6 8b d0 4c 75 a4 43 f2 2a 85 fc b9 5b
+RIM-COD-Size-31: 50648
+RIM-COD-SHA1-31: 24 9a 3c b7 f7 bd b0 c9 cc c1 33 e2 56 e4 53 2d cc 23 94 36
 RIM-COD-URL-32: EnSenas-32.cod
-RIM-COD-Size-32: 52252
-RIM-COD-SHA1-32: 39 fd d0 f0 06 6c 1d 31 a5 cb a5 8c a1 01 20 4f 2a 31 15 a1
+RIM-COD-Size-32: 45104
+RIM-COD-SHA1-32: b5 d0 b0 c8 a4 1b 7f 1a 3b ac b1 4c bc 16 df fb b6 cf dc 91
 RIM-COD-URL-33: EnSenas-33.cod
-RIM-COD-Size-33: 42520
-RIM-COD-SHA1-33: 05 3f d5 33 b5 45 af 38 fc ce b1 df 5c 5a e3 56 b9 48 7e 82
+RIM-COD-Size-33: 42560
+RIM-COD-SHA1-33: 70 7d 2b 58 d3 dd 26 9a 88 db b6 cd 77 23 50 0e b4 60 70 3f
 RIM-COD-URL-34: EnSenas-34.cod
-RIM-COD-Size-34: 47776
-RIM-COD-SHA1-34: 4c 9f 64 54 15 04 46 4a 62 8a d6 0e 9e 7f de cd 7c 23 63 38
+RIM-COD-Size-34: 47788
+RIM-COD-SHA1-34: 24 cd 1a 8f c8 6e 5d ca 7b db ec 91 66 31 b8 9d 5b d3 70 fc
 RIM-COD-URL-35: EnSenas-35.cod
-RIM-COD-Size-35: 56764
-RIM-COD-SHA1-35: 39 80 a5 bf a4 2b 51 f7 37 ab 10 1a 07 51 a5 60 f6 2b 6f 18
+RIM-COD-Size-35: 52252
+RIM-COD-SHA1-35: f6 ac ef 26 a6 93 64 72 4f 44 9e f7 30 4b 58 fd 91 52 05 fb
 RIM-COD-URL-36: EnSenas-36.cod
-RIM-COD-Size-36: 54580
-RIM-COD-SHA1-36: 80 2c d4 cf 10 4d 3e 91 93 de 30 1d 5d 9f a3 76 50 9f 4f 08
+RIM-COD-Size-36: 56764
+RIM-COD-SHA1-36: 8d 85 03 21 ae c6 bb f9 37 11 36 59 a1 92 f5 57 0d 00 41 36
 RIM-COD-URL-37: EnSenas-37.cod
-RIM-COD-Size-37: 53716
-RIM-COD-SHA1-37: f0 f2 6b 22 86 f0 12 d8 36 ab c9 a3 5f 29 f4 29 34 bf 36 fe
+RIM-COD-Size-37: 54580
+RIM-COD-SHA1-37: 2b d5 25 19 a0 9a 40 66 d7 d7 23 f2 e8 3c a2 66 62 1e 15 80
 RIM-COD-URL-38: EnSenas-38.cod
-RIM-COD-Size-38: 53432
-RIM-COD-SHA1-38: 56 8f 03 6d 72 f3 93 3b a7 79 ed b7 b5 7d b9 2b 47 d5 38 fb
+RIM-COD-Size-38: 53716
+RIM-COD-SHA1-38: 0b bf 25 19 e9 5d 85 a3 20 1c 1e 7a 8a e6 6d d5 0c 9b f9 ae
 RIM-COD-URL-39: EnSenas-39.cod
-RIM-COD-Size-39: 62228
-RIM-COD-SHA1-39: 6a 3a c1 a0 1d eb b3 d7 26 91 b7 6d 97 3a 58 d4 12 3d 72 c3
+RIM-COD-Size-39: 61864
+RIM-COD-SHA1-39: ee 50 db e0 74 8c 17 b2 c9 cc be 6f 6d ef 07 56 20 0b 13 5e

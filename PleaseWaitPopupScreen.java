@@ -46,8 +46,7 @@ public class PleaseWaitPopupScreen extends PopupScreen {
                    
                    }});
                     UiApplication.getUiApplication().invokeLater(new Runnable() {
-                        public void run() {
-                            
+                        public void run() {                            
                             if( video.cargado() ){
                                 UiApplication.getUiApplication().popScreen(thisScreen);
                                 video.ver();
@@ -67,7 +66,7 @@ public class PleaseWaitPopupScreen extends PopupScreen {
                         UiApplication.getUiApplication().popScreen(thisScreen);
                         video.ver();
                         }
-                        }},100,false );
+                        }},1000,false );
                 }
                 else{
                   UiApplication.getUiApplication().invokeLater(new Runnable() {

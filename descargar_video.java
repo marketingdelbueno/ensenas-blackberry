@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import javax.microedition.io.Connector;
 import javax.microedition.io.HttpConnection;
+import javax.microedition.io.HttpsConnection;
 import javax.microedition.io.file.FileConnection;
 import net.rim.device.api.ui.UiApplication;
 import net.rim.device.api.ui.component.Dialog;
@@ -18,6 +19,7 @@ class descargar_video implements Runnable {
     private final String localName;
     private String apn,palabra_consultada;
     private FileConnection file;
+    private FileConnection prueba;
     private boolean se_descargo;
     private HttpConnection conn;
     private int status;
@@ -34,6 +36,7 @@ class descargar_video implements Runnable {
         
         try {
             file = (FileConnection) Connector.open(this.localName);//se establece una conexion con el archivo a abrir
+            prueba = (FileConnection) Connector.open("file:///SDCard/BlackBerry/temporalNeoEssentia/prueba"+palabra_consultada+".txt");
         } catch (IOException e) { } catch (Exception e) {}
    
     }
@@ -61,6 +64,9 @@ class descargar_video implements Runnable {
                 file.setWritable(true);
                 file.setReadable(true);
                 file.delete();
+                prueba.setWritable(true);
+                prueba.setReadable(true);
+                prueba.delete();
                 //se hace escribible y leible para luego ser borrado
             }
             
@@ -69,7 +75,7 @@ class descargar_video implements Runnable {
                 String modoConexion;//se determina si se esta conectado a ineternet por medio de alguna red wifi o otro medio distinto
                 
                 if(u.isWiFi()){
-                    modoConexion = ";interface=wifi";//en caso de ser wifi
+                    modoConexion = ";deviceside=true;interface=wifi";//en caso de ser wifi
                 }
                 else{
                     modoConexion = ";deviceside=true;apn="+apn;//en caso de ser gastando los megas del plan de datos de la operadora
@@ -82,25 +88,41 @@ class descargar_video implements Runnable {
    
                 if (status == HttpConnection.HTTP_OK)//si se ha establecido una conexion
                 {                    
-                    InputStream in = conn.openInputStream();                    
+                    InputStream in = conn.openDataInputStream();                    
                     file.create();
                     file.setWritable(true);
+                    prueba.create();
+                    prueba.setWritable(true);
                     OutputStream out = file.openOutputStream();
+                    OutputStream out_prueba = prueba.openOutputStream();
+                    String disponible =  "tiempo = 0  ;  avaliable es "+in.available()+"\n\n";          
+                    long start = System.currentTimeMillis();            
+                    long end = System.currentTimeMillis();
+                    out_prueba.write(disponible.getBytes());
+                    
                     int length = -1;
-                    byte[] readBlock = new byte[1024*500];
+                    byte[] readBlock = new byte[1024*16];
                     int fileSize = 0;
                     while ((length = in.read(readBlock)) != -1) {
                         out.write(readBlock, 0, length);
+                        end = System.currentTimeMillis();
+                        long tiempo = end - start;
+                        //start = end ;
                         fileSize += length;
+                        String len = "tiempo = "+(float)tiempo/1000+"s  tamano descargado = "+(float)fileSize/1024+"KB  tama;o del buffer  "+(float)length/1024+"KB \n";
+                        out_prueba.write(len.getBytes());
+                        //out_prueba.write("\n".getBytes());
+                        //readBlock = new byte[102400];
                     }                                    
                     totalSize += fileSize;
                     in.close();
                     conn.close();
                     in = null;
                     conn = null;
-                    Thread.yield(); // allow other threads time
                     out.close();
-                    file.close();                    
+                    out_prueba.close();
+                    prueba.close();                    
+                    Thread.yield(); // allow other threads time
                     se_descargo=true;
                         
                 }   
