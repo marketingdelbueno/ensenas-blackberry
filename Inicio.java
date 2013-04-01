@@ -56,11 +56,11 @@ public class Inicio extends MainScreen{
           {
             Dialog.alert(me.toString());
           }
-         
+         long duracionVideo = vi.duracionVideo();
          UiApplication.getUiApplication().invokeLater(new Runnable() {
                 public void run() {
                     menu_principal();
                 }
-            },7700,false );      
+            },duracionVideo/1000,false );      
       }
 }

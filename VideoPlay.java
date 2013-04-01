@@ -57,6 +57,10 @@ import java.io.InputStream;
              
         }   
         
+        public long duracionVideo(){ 
+            return player.getDuration();
+            }
+        
         public Player video(){
             return player;
             }

@@ -11,7 +11,8 @@ import net.rim.blackberry.api.browser.Browser;
         public ComentarFacebook(String palabra)
         {
             Browser.getDefaultSession().displayPage( 
-            "http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http%3A%2F%2Fwww.neoessentia.org%2F&p[title]=Ensenas+Venezolano&p[summary]=Acabo+de+aprender+la+palabra+"+ palabra +"+en+lenguaje+de+senas+venezolana%2C+aprendelo+tu+tambien"    
+            //"http://m.facebook.com/sharer.php?u=http://YOUR SITE URL" "
+            "http://m.facebook.com/sharer.php?m2w&s=100&u=http%3A%2F%2Fwww.neoessentia.org%2F&p[title]=Ensenas+Venezolano&p[summary]=Acabo+de+aprender+la+palabra+"+ palabra +"+en+lenguaje+de+senas+venezolana%2C+aprendelo+tu+tambien"
             );
         }
    
