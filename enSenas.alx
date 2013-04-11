@@ -1,0 +1,31 @@
+<loader version="1.0">
+	<application id="enSenas">
+		<name >
+			enSenas
+		</name>
+		<description >
+			Diccionario de Lenguaje de Senas
+		</description>
+		<version >
+			2.1
+		</version>
+		<vendor >
+			Progressum IT
+		</vendor>
+		<copyright >
+			Copyright (c) 2013 Progressum IT
+		</copyright>
+		<fileset Java="1.34">
+			<directory >
+				
+			</directory>
+			<files >
+				enSenas.cod
+
+			</files>
+
+		</fileset>
+
+	</application>
+
+</loader>
